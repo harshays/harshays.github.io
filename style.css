@@ -1,0 +1,76 @@
+/*default font and fadein*/
+body {
+    font-family: "Source Sans Pro";
+    font-size: 1.85em;
+    line-height: 1.85em;
+    -webkit-animation: fadein 0.5s ease-in; 
+    -moz-animation:    fadein 0.5s ease-in; 
+    -o-animation:      fadein 0.5s ease-in; 
+    animation:         fadein 0.5s ease-in; 
+    border-top: 2px solid black;
+}
+
+/*padding*/
+.body-container {
+    padding: 6% 0 8% 0;
+}
+
+/*links*/
+a {
+    text-decoration: none;
+    color: #000000;
+    border-bottom: 1px solid #A9A9A9;
+}
+
+a:hover {
+    text-decoration: none;
+    color: #000000;
+    border-bottom: 2px solid #000000;
+}
+
+a:visited {
+    text-decoration: none;
+}
+
+/*helper functions*/
+.bold {
+    font-weight: 600;
+    font-size: 1.1em;
+}
+
+.light {
+    font-weight: 300;
+}
+
+.projects-div > p {
+    padding-bottom: 2%;
+}
+
+/*fadein*/
+@-webkit-keyframes fadein {
+  0%   { opacity: 0; }
+  50%  { opacity: 0.3;}
+  100% { opacity: 1; }
+}
+@-moz-keyframes fadein {
+  0%   { opacity: 0; }
+  50%  { opacity: 0.3;}
+  100% { opacity: 1; }
+}
+@-o-keyframes fadein {
+  0%   { opacity: 0; }
+  50%  { opacity: 0.3;}
+  100% { opacity: 1; }
+}
+@keyframes fadein {
+  0%   { opacity: 0; }
+  50%  { opacity: 0.3;}
+  100% { opacity: 1; }
+}
+
+/*media queries*/
+@media handle, screen and (max-device-width: 500px) {
+    body {
+        padding: 10% 0 8% 0;
+    }
+}
