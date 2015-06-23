@@ -31,7 +31,12 @@ var project_template = "\
 
 var filter = ['harshays.gitub.io', 'website', 
               'hh-personal-sites', 'learn',
-              'solutions', 'scripts', 'harshays.github.io'];
+              'solutions', 'scripts', 'harshays.github.io',
+              'weighin'];
+
+function changeNodeText(node, text) {
+    node.innerHTML = text;
+}
 
 function append(node, repo) {
     if (filter.indexOf(repo['name']) > -1) {
@@ -54,11 +59,13 @@ window.onload = function() {
     var projects_div = document.querySelector('.projects');
 
     get(repo_url).then(function(data) {
+        var node = document.querySelector('.gh_change');
         data = JSON.parse(data);
         data.forEach(function(repo) {
             append(projects_div, repo);
         });
     }, function(err) {
-        console.error(err);
+        var node = document.querySelector('.gh_change');
+        changeNodeText(node, "Most of them are on <a href='https://www.github.com/harshays'>Github</a>");
     });
 };
