@@ -49,7 +49,7 @@ function append(node, repo) {
 
 window.onload = function() {
     var repo_url = 'https://api.github.com/users/harshays/repos?sort=pushed';
-    var gh_err = "Most of them are on <a href='https://www.github.com/harshays'>Github</a>"
+    var gh_err = "Most of my projects are on <a href='https://www.github.com/harshays'>Github</a>"
 
     var body = document.querySelector('body');
     var node = document.querySelector('.gh_change');
