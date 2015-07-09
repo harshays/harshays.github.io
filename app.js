@@ -24,10 +24,14 @@ var project_template = "\
         </div> \ ";
 
 
+// do not show these
 var filter = ['harshays.gitub.io', 'website', 
               'hh-personal-sites', 'learn',
-              'solutions', 'scripts', 'harshays.github.io',
-              'weighin'];
+              'solutions', 'scripts', 'harshays.github.io'
+              ];
+
+// show only these forks
+var fork_filter = ['phrase-mining']
 
 function changeNodeText(node, text) {
     node.innerHTML = text;
@@ -36,6 +40,9 @@ function changeNodeText(node, text) {
 function append(node, repo) {
     if (filter.indexOf(repo['name']) > -1)
         return;
+
+    if (repo['fork'] && fork_filter.indexOf(repo['name']) < 0)
+        return; 
 
     var info = { 'name': repo['name'],
                  'url' : repo['homepage'] || repo['html_url'],
