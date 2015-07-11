@@ -3,10 +3,10 @@ function get(url) {
         var http = new XMLHttpRequest();
         http.open('GET', url)
         http.addEventListener('load', function() {
-            if (http.status < 400) 
+            if (http.status < 400)
                 success_cb(http.responseText);
-            else 
-                error_cb(new Error(http.status)); 
+            else
+                error_cb(new Error(http.status));
         });
         http.addEventListener('error', function() {
             error_cb(new Error());
@@ -25,9 +25,10 @@ var project_template = "\
 
 
 // do not show these
-var filter = ['harshays.gitub.io', 'website', 
+var filter = ['harshays.gitub.io', 'website',
               'hh-personal-sites', 'learn',
-              'solutions', 'scripts', 'harshays.github.io'
+              'solutions', 'scripts', 'harshays.github.io',
+              'dotfiles'
               ];
 
 // show only these forks
@@ -42,7 +43,7 @@ function append(node, repo) {
         return;
 
     if (repo['fork'] && fork_filter.indexOf(repo['name']) < 0)
-        return; 
+        return;
 
     var info = { 'name': repo['name'],
                  'url' : repo['homepage'] || repo['html_url'],
