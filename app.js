@@ -1,3 +1,6 @@
+/*
+* Promise to get github repo data
+*/
 function get(url) {
     return new Promise(function(success_cb, error_cb) {
         var http = new XMLHttpRequest();
@@ -15,6 +18,9 @@ function get(url) {
     });
 }
 
+/*
+* div for description of each project
+*/
 var project_template = "\
         <div class='col-md-3'> \
             <a href='{{url}}'>{{name}}</a> \
@@ -24,20 +30,26 @@ var project_template = "\
         </div> \ ";
 
 
-// do not show these
+// do not show these repositories
 var filter = ['harshays.gitub.io', 'website',
               'hh-personal-sites', 'learn',
               'solutions', 'scripts', 'harshays.github.io',
               'dotfiles'
               ];
 
-// show only these forks
+// only show these forked repositories
 var fork_filter = ['phrase-mining']
 
+// helper to change node content
 function changeNodeText(node, text) {
     node.innerHTML = text;
 }
 
+
+/*
+* filter repo. if valid, extract repo info
+* and use mustache to display it
+*/
 function append(node, repo) {
     if (filter.indexOf(repo['name']) > -1)
         return;
