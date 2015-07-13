@@ -40,69 +40,78 @@ var filter = ['harshays.gitub.io', 'website',
 // only show these forked repositories
 var fork_filter = ['phrase-mining']
 
-// helper to change node content
-function changeNodeText(node, text) {
-    node.innerHTML = text;
+// filter repo
+function filterRepos(repos) {
+    return repos.filter(function(repo) {
+        var inFilter = filter.indexOf(repo['name']) > -1;
+        var inFork = fork_filter.indexOf(repo['name']) > -1;
+        var isFork = repo['fork'];
+
+        if (isFork) {
+            if (inFork)
+                return true;
+            return false;
+        }
+
+        if (inFilter)
+            return false;
+
+        return true;
+    });
 }
 
-/*
-* filter repo. if valid, extract repo info
-* and use mustache to display it
-*/
-function append(node, repo) {
-    if (filter.indexOf(repo['name']) > -1)
-        return;
-
-    if (repo['fork'] && fork_filter.indexOf(repo['name']) < 0)
-        return;
-
-    var info = { 'name': repo['name'],
-                 'url' : repo['homepage'] || repo['html_url'],
-                 'description' : repo['description'] };
-
-    var project_div  = document.createElement('div');
-    project_div.className = 'row project-row';
-    project_div.innerHTML = Mustache.to_html(project_template, info);
-    node.appendChild(project_div);
+// extract repo key-vals
+function extractRepo(repo) {
+    return  { 'name': repo['name'],
+              'url' : repo['homepage'] || repo['html_url'],
+              'description' : repo['description'] 
+            };
 }
 
-// setup before promise handline
+// add repo to dom
+function addRepo(info) {
+    var $repo = $('<div>', {'class': 'row project_row'});
+    $repo.html(Mustache.to_html(project_template, info));
+    $('.projects').append($repo);
+}
+
+// setup before promise handling
 function setup_before() {
-    var container = document.querySelector('.body-container');
-    container.style.height = window.innerHeight + "px";
+    var window_ht = $(window).height();
+    $('.body_container').height(window_ht);
 }
 
 // setup after promise handling
 function setup_after() {
-    document.body.style.display = 'block';
+    $('body').fadeIn('fast');
 }
 
-window.onload = function() {
+$(document).ready(function() {
     var repo_url = 'https://api.github.com/users/harshays/repos?sort=pushed';
     var gh_err = "Most of my projects are on <a href='https://www.github.com/harshays'>Github</a>"
-
-    var body = document.querySelector('body');
-    var node = document.querySelector('.gh_change');
-    var projects_div = document.querySelector('.projects');
+    var $node = $('.gh_change');
 
     setup_before();
 
     try {
-        get(repo_url).then(function(data) {
-            data = JSON.parse(data);
-            data.forEach(function(repo) {
-                append(projects_div, repo);
+        get(repo_url).then(
+        function(data) {
+            var repos = filterRepos(JSON.parse(data));
+            repos.forEach(function(repo) {
+                var info = extractRepo(repo);
+                addRepo(info);
             });
             setup_after();
-        }, function(err) {
-            changeNodeText(node, gh_err);
+        },
+        function(err) {
+            $node.html(gh_err);
             setup_after();
         });
     }
-    catch (err) {
-        if (err instanceof ReferenceError) {
-            changeNodeText(node, gh_err);
-        }
+    catch(err) {
+        if (err instanceof ReferenceError)
+            $node.html(gh_err);
         setup_after();
     }
-};
+});
+
