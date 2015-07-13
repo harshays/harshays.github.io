@@ -45,7 +45,6 @@ function changeNodeText(node, text) {
     node.innerHTML = text;
 }
 
-
 /*
 * filter repo. if valid, extract repo info
 * and use mustache to display it
@@ -67,6 +66,17 @@ function append(node, repo) {
     node.appendChild(project_div);
 }
 
+// setup before promise handline
+function setup_before() {
+    var container = document.querySelector('.body-container');
+    container.style.height = window.innerHeight + "px";
+}
+
+// setup after promise handling
+function setup_after() {
+    document.body.style.display = 'block';
+}
+
 window.onload = function() {
     var repo_url = 'https://api.github.com/users/harshays/repos?sort=pushed';
     var gh_err = "Most of my projects are on <a href='https://www.github.com/harshays'>Github</a>"
@@ -75,23 +85,24 @@ window.onload = function() {
     var node = document.querySelector('.gh_change');
     var projects_div = document.querySelector('.projects');
 
+    setup_before();
+
     try {
         get(repo_url).then(function(data) {
-            var node = document.querySelector('.gh_change');
             data = JSON.parse(data);
             data.forEach(function(repo) {
                 append(projects_div, repo);
             });
-            body.style.display = 'block';
+            setup_after();
         }, function(err) {
             changeNodeText(node, gh_err);
-            body.style.display = 'block';
+            setup_after();
         });
     }
     catch (err) {
         if (err instanceof ReferenceError) {
             changeNodeText(node, gh_err);
         }
-        body.style.display = 'block';
+        setup_after();
     }
 };
