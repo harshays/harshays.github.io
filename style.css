@@ -1,54 +1,28 @@
 /*default font and fadein*/
-html {
-    border-top: 2px solid black;
-}
+html { border-top: 2px solid black; }
 
 body {
     font-family: "Source Sans Pro";
-    font-size: 1.85em;
+    font-size  : 1.85em;
     line-height: 1.85em;
-    display: none;
 }
 
-/*padding*/
-.body-container {
-    padding: 6% 0 8% 0;
-}
-
-.projects-div > p {
-    padding-bottom: 2%;
-}
-
-/*links*/
-a {
+a, a:hover, a:visited {
     text-decoration: none;
     color: #000000;
     border-bottom: 1px solid #A9A9A9;
 }
 
-a:hover {
-    text-decoration: none;
-    color: #000000;
-    border-bottom: 2px solid #000000;
-}
+.body-container { padding: 6% 0 8% 0; }
 
-a:visited {
-    text-decoration: none;
-}
+.content-row { padding-bottom: 1%; }
 
-/*helper functions*/
-.bold {
-    font-weight: 600;
-    font-size: 1.1em;
-}
+a:hover { border-bottom: 2px solid #000000; }
 
-.light {
-    font-weight: 300;
-}
+.bold { font-weight: 600; }
 
-/*media queries*/
+.name { font-size: 1.1em; }
+
 @media handle, screen and (max-device-width: 500px) {
-    body {
-        padding: 10% 0 8% 0;
-    }
+    body { padding: 10% 0 8% 0; }
 }
