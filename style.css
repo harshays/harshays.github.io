@@ -26,3 +26,36 @@ a:hover { border-bottom: 2px solid #000000; }
 @media handle, screen and (max-device-width: 500px) {
     body { padding: 10% 0 8% 0; }
 }
+
+/* animations */
+
+.project.ng-enter {
+    opacity: 0;
+    -webkit-transition: 1s linear all;
+       -moz-transition: 1s linear all;
+        -ms-transition: 1s linear all;
+         -o-transition: 1s linear all;
+            transition: 1s linear all;
+}
+
+.project.ng-enter-stagger { transition-delay: 0.1s; }
+
+.project.ng-enter-active { opacity: 1; }
+
+.body-container {
+    -webkit-animation: fadein 1s; 
+       -moz-animation: fadein 1s; 
+        -ms-animation: fadein 1s; 
+         -o-animation: fadein 1s; 
+            animation: fadein 1s;
+}
+
+@keyframes fadein { from { opacity: 0; } to { opacity: 1; } }
+
+@-moz-keyframes fadein { from { opacity: 0; } to { opacity: 1; } }
+
+@-webkit-keyframes fadein { from { opacity: 0; } to { opacity: 1; } }
+
+@-ms-keyframes fadein { from { opacity: 0; } to { opacity: 1; } }
+
+@-o-keyframes fadein { from { opacity: 0; } to { opacity: 1; } }
