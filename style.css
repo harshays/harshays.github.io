@@ -21,7 +21,7 @@ a:hover { border-bottom: 2px solid #000000; }
 
 .bold { font-weight: 600; }
 
-.name { font-size: 1.1em; }
+.name { font-size: 1.25em; }
 
 @media handle, screen and (max-device-width: 500px) {
     body { padding: 10% 0 8% 0; }

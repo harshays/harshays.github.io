@@ -49,11 +49,11 @@ websiteApp.filter('repoFilter', function() {
 });
 
 websiteApp.controller('contentCtrl', function($scope) {
-    $scope.uiuc  = 'http://cs.illinois.edu';
-    $scope.akuna = 'http://www.akunacapital.com';
-    $scope.timan = 'http://sifaka.cs.uiuc.edu/ir/index.html';
-    $scope.email = 'hrshah4@illinois.edu';
-    $scope.github  = 'http://www.github.com/harshays';
+    $scope.uiuc     = 'http://cs.illinois.edu';
+    $scope.akuna    = 'http://www.akunacapital.com';
+    $scope.timan    = 'http://sifaka.cs.uiuc.edu/ir/index.html';
+    $scope.email    = 'hrshah4@illinois.edu';
+    $scope.github   = 'http://www.github.com/harshays';
     $scope.linkedin = 'http://www.linkedin.com/in/harshayshah';
     $scope.facebook = 'http://www.facebook.com/harshay.shah';
 });
