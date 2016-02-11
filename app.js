@@ -23,8 +23,8 @@ websiteApp.filter('repoFilter', function() {
     return function(repos) {
         var out = [];
 
-        var repo_filter = 
-            ['harshays.gitub.io', 'website', 'hh-personal-sites', 'learn',
+        var repo_filter =
+            ['moocs', 'harshays.gitub.io', 'website', 'hh-personal-sites', 'learn',
              'solutions', 'scripts', 'harshays.github.io', 'dotfiles'];
 
         var fork_filter = ['phrase-mining'];
@@ -43,7 +43,7 @@ websiteApp.filter('repoFilter', function() {
                 'description': repo['description']
             });
         });
-        
+
         return out;
     };
 });
