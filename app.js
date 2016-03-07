@@ -25,7 +25,7 @@ websiteApp.filter('repoFilter', function() {
 
         var repo_filter =
             ['moocs', 'harshays.gitub.io', 'website', 'hh-personal-sites', 'learn',
-             'solutions', 'scripts', 'harshays.github.io', 'dotfiles'];
+             'solutions', 'scripts', 'harshays.github.io', 'dotfiles', 'ios'];
 
         var fork_filter = ['phrase-mining'];
 
