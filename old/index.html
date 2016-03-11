@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <!-- metas -->
+    <meta type="author" content="Harshay Shah"/>
+    <meta type="description" content="Hello world."/>
+    <meta name="viewport" content="initial-scale=1"/>
+    <meta name="viewport" content="width=device-width,maximum-scale=1.0"/>
+    <meta http-eqiv="content-type" content="text/html; charset=utf-8"/>
+
+    <title>Harshay Shah</title>
+
+    <!-- css -->
+    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="./style.css">
+
+</head>
+
+<body ng-app='websiteApp'>
+
+    <div class="container-fluid body-container" ng-controller='contentCtrl'>
+
+        <div class="row content-row">
+
+            <div class="col-md-1 col-xs-1 "></div>
+
+            <div class="col-md-6 col-xs-10 content">
+                <p class="bold name">Hi, I'm Harshay.</p>
+
+                <p>
+                    I study Computer Science and Statistics at the <a href="{{uiuc}}" target="_blank">
+                    University of Illinois at Urbana-Champaign</a>. I expect to graduate in 2018.
+                </p>
+
+                <p>
+                    Previously, I was a software engineering intern at <a href="{{akuna}}" target="_blank">
+                    Akuna Capital</a>, a proprietary trading firm in Chicago,
+
+                    and an undergraduate research mentee in the
+                    <a href="{{timan}}" target="_blank">Text Information Management and Analysis Group</a>
+                    at UIUC.
+                </p>
+
+                <p>
+                    Feel free to <a href="mailto:{{email}}" target="_blank">email</a> me or get in touch
+                    on <a href="{{linkedin}}" target="_blank">LinkedIn</a>.
+                </p>
+
+            </div>
+            <div class="col-md-5 col-xs-1"></div>
+        </div>
+
+        <div class="row projects-row" ng-controller='projectsCtrl'>
+            <div class="col-xs-1"> </div>
+
+            <div class="col-xs-10 projects-div">
+                <p class='bold'>Projects</p>
+
+                <p>
+                    I enjoy writing <a href="{{github}}" target="_blank">code</a>.
+                    Here are a few projects I've worked on.
+                </p>
+
+                <div class="projects">
+                    <div ng-repeat='repo in data' ng-cloak class='project'>
+                        <div class="col-md-3">
+                            <a href="{{repo.url}}">{{repo.name}}</a>
+                        </div>
+                        <div class="col-md-9">
+                            <p>{{repo.description}}</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="col-xs-1"></div>
+
+        </div>
+    </div>
+</body>
+
+<!-- js -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.14/angular.min.js"></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.3.14/angular-animate.min.js'></script>
+<script type="text/javascript" src="./app.js"></script>
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-55279868-1', 'auto');
+  ga('send', 'pageview');
+</script>
+
+</html>
