@@ -10,14 +10,17 @@
 
     <title>Harshay Shah</title>
 
-    <!-- css -->
-    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <!-- fonts -->
     <link rel='stylesheet' type='text/css' href='https://fonts.googleapis.com/css?family=Ubuntu:400,300,500,700'>
     <link rel='stylesheet' type='text/css' href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700'>
+
+    <!-- css -->
+    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="./style.css">
+
 </head>
 
-<body>
+<body ng-app="websiteApp">
 
     <div class="container">
                 
@@ -28,9 +31,9 @@
                 <p class="nomargin pull-left nav-name">Harshay Shah</p>
                 <div class="text-center pull-right nav-sm-ul-div">
                     <ul class="nomargin list-inline nav-ul">
-                        <li>About</li>
-                        <li>Projects</li>
-                        <li>Posts</li>
+                        <li class='nav-li about-li'><a href="#/">About</a></li>
+                        <li class='nav-li projects-li'><a href="#/projects">Projects</a></li>
+                        <li class='nav-li posts-li'><a href="#/posts">Posts</a></li>
                     </ul>
                 </div>
             </div>
@@ -40,9 +43,9 @@
                 <p class="nav-name">Harshay Shah</p>
                 <div class='nav-xs-ul-div'>
                     <ul class="nomargin list-inline nav-ul">
-                        <li>About</li>
-                        <li>Projects</li>
-                        <li>Posts</li>
+                        <li class='nav-li about-li'><a href="#/">About</a></li>
+                        <li class='nav-li projects-li'><a href="#/projects">Projects</a></li>
+                        <li class='nav-li posts-li'><a href="#/posts">Posts</a></li>
                     </ul>
                 </div>
             </div>
@@ -57,30 +60,21 @@
                     <p class="sidebar-name">Harshay Shah</p>
 
                     <ul class="list-unstyled sidebar-ul">
-                        <li>About</li>
-                        <li>Projects</li>
-                        <li>Posts</li>
+                        <li class='nav-li about-li'><a href="#/">About</a></li>
+                        <li class='nav-li projects-li'><a href="#/projects">Projects</a></li>
+                        <li class='nav-li posts-li'><a href="#/posts">Posts</a></li>
                     </ul>
                 </div>
             </div>
 
-            <!-- content col -->
-            <div class="col-xs-12 col-md-offset-4 col-md-7 col-lg-6 content-col">
-                <div class="content-div">
-                    <p class="content content-header">
-                        About
-                    </p>
-                    <p class="content">
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere aperiam, explicabo quae fugit sunt commodi doloremque eum sint fuga illum quis nulla distinctio id labore repellat officiis enim molestiae magnam, eos laboriosam unde impedit. Aliquid ipsam laborum, adipisci numquam eos beatae ab, veniam vitae natus deserunt dolorum dolorem accusamus. Maxime ab, quisquam, eos facilis quod aliquam et cum illo, dolor fugit deleniti vel. Eligendi vitae fugit distinctio dolor deserunt hic enim sint ducimus beatae, dicta quasi quae alias soluta, aliquid exercitationem! Odit totam suscipit, fugit neque cumque voluptatibus minus quos accusantium vitae delectus. Blanditiis ab at quos quo unde quam.</p>
-                    <p class="content">
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur quae ex omnis illo dicta, explicabo nemo cupiditate debitis aperiam totam reiciendis, nobis quis perspiciatis sit vel laudantium, perferendis pariatur ipsum cumque, numquam. Quam culpa temporibus accusantium voluptas, iste molestias, facere ab iure earum eum quod animi asperiores doloremque repudiandae odio.
-                    </p>                       
-                </div>
+            <div class="col-xs-12 col-md-offset-4 col-md-7 col-lg-6 content-col" ng-view>
+                <!-- content col -->
            </div>
 
            <div class="col-md-1 col-lg-2"></div>
 
         </div>
+
     </div>
 
 </body>    
