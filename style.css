@@ -8,11 +8,10 @@ body {
     padding-bottom: 10%;
  }
 
-.nopadding { padding: 0 !important; }
 .nomargin { margin: 0 !important; }
-.fixed { position: fixed;  }
 
 /*xs and sm navigation*/
+
 .nav-row {
     margin: 3% 0 0 0;
     padding-bottom: 2%;
@@ -20,7 +19,7 @@ body {
 }
 
 .nav-name {
-    font-weight: 600;
+    font-weight: 700;
     font-size: 1.6em;
     padding: 2%;
     margin: 0;
