@@ -1,6 +1,6 @@
-* { border: 2px dotted black; }
+/** { border: 2px dotted black; }
 div  {  border: 2px dotted blue; }
-body { border: 2px solid red;  }
+body { border: 2px solid red;  }*/
 
 body {
     font-family: "Ubuntu", "Source Sans Pro";
@@ -43,15 +43,73 @@ body {
 
 
 /*content column*/
+.content-col {
+    padding-top: 1%;
+}
+
 .content-div {
-    margin: 2% 2% 4% 2%;
+    margin: 0 0 4% 0;
 }
 
 .content {
-    padding: 3% 3% 1% 3%;
+    padding: 0 1% 0 1%;
     font-size: 1.2em;
     line-height: 1.75em;
 }
+
+.content-header {
+    font-size: 1.4em;
+    line-height: 1.8em;
+    font-weight: 500;
+    color: #404040;
+}
+
+
+/*sidebar column*/
+
+.sidebar-col {
+    padding-top: 1%;
+}
+
+.sidebar-content {
+    min-width: 90%;
+    max-width: 90%;
+    padding: 5%;
+}
+
+.sidebar-name {
+    font-weight: 700;
+    font-size: 1.6em;
+}
+
+.sidebar-ul {
+    font-size: 1.3em;
+    color: #696969;
+}
+
+.sidebar-ul li {
+    padding: 2% 2% 2% 0;
+    font-weight: 300;
+}
+
+/* main row */
+.main-row {
+    margin: 3% 0 0 0;
+    padding-bottom: 2%;
+}
+
+/* media query for md and lg */
+@media only screen and (min-width : 992px) {
+    .content-div {
+        margin-top: 4%;
+    }
+}
+
+
+
+
+
+
 
 
 
