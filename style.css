@@ -4,10 +4,13 @@ body {
     padding-bottom: 10%;
  }
 
+ ::-webkit-scrollbar { 
+     display: none; 
+ }
+
 .nomargin  { margin: 0 !important; }
 
-
-/*links*/
+/*text*/
 
 a, a:hover, a:visited {
     text-decoration: none;
@@ -25,8 +28,60 @@ a:hover {
     font-weight: 300;
 }
 
+.nav-li a:hover {
+    border-bottom: none;
+}
 
-/*xs and sm navigation*/
+.nav-name {
+    font-weight: 700;
+    font-size: 1.6em;
+}
+
+.nav-ul {
+    font-size: 1.3em;
+    color: #696969;
+}
+
+.content {
+    font-size: 1.25em;
+    line-height: 1.75em;
+    color: #767676;
+}
+
+.content-header {
+    font-size: 1.6em;
+    font-weight: 500;
+}
+
+.sidebar-col {
+    font-size: 1.1em;
+}
+
+.sidebar-name {
+    font-weight: 700;
+    font-size: 1.6em;
+}
+
+.sidebar-ul {
+    font-size: 1.3em;
+    color: #696969;
+}
+
+.project-name span {
+    color: black;
+    font-weight: 500;
+}
+
+.project-description {
+    font-size: 0.9em;
+}
+
+.active-nav-li {
+    font-weight: 500 !important;
+}
+
+
+/*spacing, margin and padding*/
 
 .nav-row {
     margin: 3% 0 0 0;
@@ -35,15 +90,8 @@ a:hover {
 }
 
 .nav-name {
-    font-weight: 700;
-    font-size: 1.6em;
     padding: 2%;
     margin: 0;
-}
-
-.nav-ul {
-    font-size: 1.3em;
-    color: #696969;
 }
 
 .nav-ul li {
@@ -57,9 +105,6 @@ a:hover {
     padding: 2%;
 }
 
-
-/*content column*/
-
 .content-div {
     padding-top: 1%;
 }
@@ -67,21 +112,9 @@ a:hover {
 .content {
     padding: 1% 3% 1% 3%;
     margin-bottom: 2%;
-    font-size: 1.25em;
-    line-height: 1.75em;
-    color: #474747;
 }
-
-.content-header {
-    font-size: 1.6em;
-    font-weight: 500;
-}
-
-
-/*sidebar column*/
 
 .sidebar-col {
-    font-size: 1.1em;
     padding-top: 1%;
 }
 
@@ -91,44 +124,24 @@ a:hover {
     padding: 5%;
 }
 
-.sidebar-name {
-    font-weight: 700;
-    font-size: 1.6em;
-}
-
-.sidebar-ul {
-    font-size: 1.3em;
-    color: #696969;
-}
-
 .sidebar-ul li {
     padding: 2% 2% 2% 0;
     font-weight: 300;
 }
 
-/* main row */
+.contact-ul {
+    margin-top: 10%;
+}
 
 .main-row {
     margin: 3% 0 0 0;
     padding-bottom: 2%;
 }
 
-/*projects*/
-
 .project p {
     margin: 0;
     padding: 0;
 }
-
-.project-name span {
-    color: black;
-    font-weight: 500;
-}
-
-.project-description {
-    font-size: 0.9em;
-}
-
 
 /* media query for md and lg */
 

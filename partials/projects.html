@@ -7,28 +7,8 @@
 </div>
 
 <div class="content-div">
-    <div class="content project">
-        <p class="project-name"><span><a href="https://github.com/harshays/jot">Jot</a></span></p>
-        <p class="project-description">Python CLI to track information and log events</p>
-    </div>
-
-    <div class="content project">
-        <p class="project-name"><span><a href="https://github.com/harshays/clean">Clean</a></span></p>
-        <p class="project-description">Python CLI to clean and categorize folders</p>
-    </div>
-
-    <div class="content project">
-        <p class="project-name"><span><a href="https://github.com/harshays/pyuiuc">PyUIUC</a></span></p>
-        <p class="project-description">Python API wrapper for UIUC courses</p>
-    </div>
-
-    <div class="content project">
-        <p class="project-name"><span><a href="https://github.com/harshays/southwest">Southwest</a></span></p>
-        <p class="project-description">Python Utility to schedule southwest check-ins</p>
-    </div>
-
-    <div class="content project">
-        <p class="project-name"><span><a href="https://github.com/harshays/prioritize">Prioritize</a></span></p>
-        <p class="project-description">Task management web application. Built with Flask</p>
+    <div ng-repeat="project in projects" class="content project">
+        <p class="project-name"><span><a href="#">{{project[0]}}</a></span></p>
+        <p class="project-description">{{project[1]}}</p>
     </div>
 </div>
