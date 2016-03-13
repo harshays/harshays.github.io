@@ -5,6 +5,10 @@ body {
     padding-bottom: 10%;
  }
 
+ ::-webkit-scrollbar { 
+     display: none; 
+ }
+
 .nomargin  { margin: 0 !important; }
 
 /*text*/
