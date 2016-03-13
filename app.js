@@ -35,6 +35,11 @@ websiteApp.service('utils', function() {
         }
         return arr;
     };
+
+    this.toggleActiveNav = function(route) {
+        $('.nav-li').find('a').removeClass('active-nav-li');
+        $("[nav='"+route+"']").find('a').addClass('active-nav-li');
+    }
 });
 
 websiteApp.filter('slice', function() {
@@ -73,6 +78,14 @@ websiteApp.controller('postsController', function($scope, utils) {
     $scope.interests = utils.shuffle(["statistics", "exploratory data analysis", "data visualizations",
                                       "kaggle submissions", "machine learning"]);
     $scope.end = $scope.interests.length - 1;
+});
+
+websiteApp.run(function($rootScope, $location, $route, utils) {
+    $rootScope.$on('$routeChangeSuccess', function() {
+        var loc   = $location.path().substring(1);
+        var route = (loc == "") ? "about" : loc;
+        utils.toggleActiveNav(route);
+    });
 });
 
 

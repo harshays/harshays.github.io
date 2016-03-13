@@ -1,4 +1,3 @@
-
 body {
     font-family: "Ubuntu", "Source Sans Pro";
     background-color: #F5F5F5;
@@ -27,6 +26,10 @@ a:hover {
     text-decoration: none;
     color: #696969;
     font-weight: 300;
+}
+
+.nav-li a:hover {
+    border-bottom: none;
 }
 
 .nav-name {
@@ -73,6 +76,9 @@ a:hover {
     font-size: 0.9em;
 }
 
+.active-nav-li {
+    font-weight: 500 !important;
+}
 
 
 /*spacing, margin and padding*/
