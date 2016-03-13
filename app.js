@@ -23,6 +23,26 @@ websiteApp.config(function($routeProvider) {
         });
 });
 
+websiteApp.service('utils', function() {
+    this.shuffle = function(arr) {
+        var counter = arr.length;
+        while (counter > 0) {
+            var index = Math.floor(Math.random() * counter);
+            counter--;
+            var temp = arr[counter];
+            arr[counter] = arr[index];
+            arr[index] = temp;
+        }
+        return arr;
+    };
+});
+
+websiteApp.filter('slice', function() {
+    return function(arr, start, end) {
+        return arr.slice(start, end);
+    }
+});
+
 websiteApp.controller('aboutController', function($scope) {
     $scope.name      = 'About';
     
@@ -38,13 +58,21 @@ websiteApp.controller('aboutController', function($scope) {
     $scope.linkedin  = 'http://www.linkedin.com/in/harshayshah';
 });
 
-websiteApp.controller('projectsController', function($scope) {
-    $scope.name = "Projects";
+websiteApp.controller('projectsController', function($scope, utils) {
+    $scope.projects = utils.shuffle([
+        ["Jot", "Python CLI to track information and log events", "https://github.com/harshays/jot"],
+        ["Clean", "Python CLI to clean and categorize folders", "https://github.com/harshays/clean"],
+        ["PyUIUC", "Python API wrapper for UIUC courses", "https://github.com/harshays/pyuiuc"],
+        ["Southwest", "Python Utility to schedule southwest check-ins", "https://github.com/harshays/southwest"],
+        ["Prioritize", "Task management web application. Built with Flask", "https://github.com/harshays/prioritize"],
+    ]);
+
 });
 
-websiteApp.controller('postsController', function($scope) {
-    $scope.name = "Posts"
+websiteApp.controller('postsController', function($scope, utils) {
+    $scope.interests = utils.shuffle(["statistics", "exploratory data analysis", "data visualizations",
+                                      "kaggle submissions", "machine learning"]);
+    $scope.end = $scope.interests.length - 1;
 });
-
 
 
