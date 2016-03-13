@@ -76,3 +76,6 @@ websiteApp.controller('postsController', function($scope, utils) {
 });
 
 
+$(document).ready(function() {
+    $('body').hide().fadeIn();
+});
