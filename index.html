@@ -28,7 +28,7 @@
 
 <body ng-app="websiteApp">
 
-    <div class="container">
+    <div class="container" ng-controller="bodyController">
                 
         <div class="hidden-md hidden-lg row nav-row">
 
@@ -37,9 +37,9 @@
                 <p class="nomargin pull-left nav-name">Harshay Shah</p>
                 <div class="text-center pull-right nav-sm-ul-div">
                     <ul class="nomargin list-inline nav-ul">
-                        <li class='nav-li about-li'><a href="#/">About</a></li>
-                        <li class='nav-li projects-li'><a href="#/projects">Projects</a></li>
-                        <li class='nav-li posts-li'><a href="#/posts">Posts</a></li>
+                        <li class='nav-li about-li'><a ng-href="#/">About</a></li>
+                        <li class='nav-li projects-li'><a ng-href="#/projects">Projects</a></li>
+                        <li class='nav-li posts-li'><a ng-href="#/posts">Posts</a></li>
                     </ul>
                 </div>
             </div>
@@ -49,9 +49,9 @@
                 <p class="nav-name">Harshay Shah</p>
                 <div class='nav-xs-ul-div'>
                     <ul class="nomargin list-inline nav-ul">
-                        <li class='nav-li about-li'><a href="#/">About</a></li>
-                        <li class='nav-li projects-li'><a href="#/projects">Projects</a></li>
-                        <li class='nav-li posts-li'><a href="#/posts">Posts</a></li>
+                        <li class='nav-li about-li'><a ng-href="#/">About</a></li>
+                        <li class='nav-li projects-li'><a ng-href="#/projects">Projects</a></li>
+                        <li class='nav-li posts-li'><a ng-href="#/posts">Posts</a></li>
                     </ul>
                 </div>
             </div>
@@ -66,9 +66,15 @@
                     <p class="sidebar-name">Harshay Shah</p>
 
                     <ul class="list-unstyled sidebar-ul">
-                        <li class='nav-li about-li'><a href="#/">About</a></li>
-                        <li class='nav-li projects-li'><a href="#/projects">Projects</a></li>
-                        <li class='nav-li posts-li'><a href="#/posts">Posts</a></li>
+                        <li class='nav-li about-li'><a ng-href="#/">About</a></li>
+                        <li class='nav-li projects-li'><a ng-href="#/projects">Projects</a></li>
+                        <li class='nav-li posts-li'><a ng-href="#/posts">Posts</a></li>
+                    </ul>
+
+                    <ul class="list-unstyled sidebar-ul contact-ul">
+                        <li class='nav-li'><a ng-href="{{github}}" target="_blank">Github</a></li>
+                        <li class='nav-li'><a ng-href="{{twitter}}" target="_blank">Twitter</a></li>
+                        <li class='nav-li'><a ng-href="{{linkedin}}" target="_blank">LinkedIn</a></li>
                     </ul>
                 </div>
             </div>

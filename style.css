@@ -119,11 +119,14 @@ a:hover {
     font-weight: 300;
 }
 
+.contact-ul {
+    margin-top: 10%;
+}
+
 .main-row {
     margin: 3% 0 0 0;
     padding-bottom: 2%;
 }
-
 
 .project p {
     margin: 0;

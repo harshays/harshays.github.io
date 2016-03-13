@@ -43,19 +43,19 @@ websiteApp.filter('slice', function() {
     }
 });
 
-websiteApp.controller('aboutController', function($scope) {
-    $scope.name      = 'About';
-    
-    $scope.uiuc      = 'http://illinois.edu'
-    $scope.csuiuc    = 'http://cs.illinois.edu';
-    $scope.goodreads = 'https://www.goodreads.com/harshays'
-
-    $scope.akuna     = 'http://www.akunacapital.com';
-    $scope.timan     = 'http://sifaka.cs.uiuc.edu/ir/index.html';
-    
+websiteApp.controller('bodyController', function($scope) {
     $scope.email     = 'hrshah4@illinois.edu';
     $scope.github    = 'http://www.github.com/harshays';
     $scope.linkedin  = 'http://www.linkedin.com/in/harshayshah';
+    $scope.twitter   = 'http://www.twitter.com/Harshay11';
+});
+
+websiteApp.controller('aboutController', function($scope) {
+    $scope.uiuc      = 'http://illinois.edu'
+    $scope.csuiuc    = 'http://cs.illinois.edu';
+    $scope.goodreads = 'https://www.goodreads.com/harshays'
+    $scope.akuna     = 'http://www.akunacapital.com';
+    $scope.timan     = 'http://sifaka.cs.uiuc.edu/ir/index.html';
 });
 
 websiteApp.controller('projectsController', function($scope, utils) {
