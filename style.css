@@ -1,3 +1,5 @@
+/** { border: 1px dotted grey;}*/
+
 body {
     font-family: "Ubuntu", "Source Sans Pro";
     background-color: #F5F5F5;
@@ -143,6 +145,12 @@ a:hover {
 
 @media only screen and (min-width : 992px) {
     .content-div {
-        margin-top: 4%;
+        margin-top: 3%;
+    }
+}
+
+@media only screen and (min-width : 1300px){
+    .content-div {
+        margin-top: 5%;
     }
 }
