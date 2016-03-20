@@ -75,8 +75,8 @@ websiteApp.controller('projectsController', function($scope, utils) {
 });
 
 websiteApp.controller('postsController', function($scope, utils) {
-    $scope.interests = utils.shuffle(["statistics", "exploratory data analysis", "data visualizations",
-                                      "kaggle submissions", "machine learning"]);
+    $scope.interests = utils.shuffle(["statistics", "exploratory data analysis", "data visualization",
+                                      "Kaggle submissions", "machine learning"]);
     $scope.end = $scope.interests.length - 1;
 });
 
