@@ -65,8 +65,8 @@ websiteApp.controller('aboutController', function($scope) {
 
 websiteApp.controller('projectsController', function($scope, utils) {
     $scope.projects = utils.shuffle([
-        ["Jot", "Python CLI to track information and log events", "https://github.com/harshays/jot"],
-        ["Clean", "Python CLI to clean and categorize folders", "https://github.com/harshays/clean"],
+        ["Jot", "CLI to track information and log events", "https://github.com/harshays/jot"],
+        ["Clean", "CLI to clean and categorize folders", "https://github.com/harshays/clean"],
         ["PyUIUC", "Python API wrapper for UIUC courses", "https://github.com/harshays/pyuiuc"],
         ["Southwest", "Python Utility to schedule southwest check-ins", "https://github.com/harshays/southwest"],
         ["Prioritize", "Task management web application. Built with Flask", "https://github.com/harshays/prioritize"],
