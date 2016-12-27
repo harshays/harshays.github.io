@@ -56,27 +56,29 @@ websiteApp.controller('bodyController', function($scope) {
 });
 
 websiteApp.controller('aboutController', function($scope) {
-    $scope.uiuc      = 'http://illinois.edu'
+    $scope.uiuc      = 'http://illinois.edu';
     $scope.csuiuc    = 'http://cs.illinois.edu';
-    $scope.goodreads = 'https://www.goodreads.com/harshays'
+    $scope.goodreads = 'https://www.goodreads.com/harshays';
     $scope.akuna     = 'http://www.akunacapital.com';
     $scope.timan     = 'http://sifaka.cs.uiuc.edu/ir/index.html';
+    $scope.crowd     = 'http://sundaram.cs.illinois.edu/';
 });
 
 websiteApp.controller('projectsController', function($scope, utils) {
     $scope.projects = utils.shuffle([
-        ["Jot", "CLI to track information and log events", "https://github.com/harshays/jot"],
-        ["Clean", "CLI to clean and categorize folders", "https://github.com/harshays/clean"],
-        ["PyUIUC", "Python API wrapper for UIUC courses", "https://github.com/harshays/pyuiuc"],
-        ["Southwest", "Python Utility to schedule southwest check-ins", "https://github.com/harshays/southwest"],
-        ["Prioritize", "Task management web application. Built with Flask", "https://github.com/harshays/prioritize"],
+        ["jot", "utility to track information and log events", "https://github.com/harshays/jot"],
+        ["clean", "utility to clean and categorize folders", "https://github.com/harshays/clean"],
+        ["pyuiuc", "python api wrapper for UIUC courses", "https://github.com/harshays/pyuiuc"],
+        ["southwest", "python utility to schedule southwest check-ins", "https://github.com/harshays/southwest"],
+        ["prioritize", "task management web app", "https://github.com/harshays/prioritize"],
+        ["papers", "reviews and/or summaries of papers", "https://github.com/harshays/papers"],
     ]);
 
 });
 
 websiteApp.controller('postsController', function($scope, utils) {
     $scope.interests = utils.shuffle(["statistics", "exploratory data analysis", "data visualization",
-                                      "Kaggle submissions", "machine learning"]);
+                                      "social and information networks", "machine learning"]);
     $scope.end = $scope.interests.length - 1;
 });
 

@@ -1,9 +1,8 @@
 /** { border: 1px dotted grey;}*/
 
 body {
-    font-family: "Ubuntu", "Source Sans Pro";
-    background-color: #F5F5F5;
-    padding-bottom: 10%;
+    font-family: "Consolas";
+    background-color: white;
  }
 
  ::-webkit-scrollbar {
@@ -16,12 +15,7 @@ body {
 
 a, a:hover, a:visited {
     text-decoration: none;
-    color: #474747;
     font-weight: 500;
-}
-
-a:hover {
-    border-bottom: 1px solid #474747;
 }
 
 .sidebar-col a, .nav-col a {
@@ -36,37 +30,18 @@ a:hover {
 
 .nav-name {
     font-weight: 700;
-    font-size: 1.6em;
+    font-size: 1.4em;
 }
 
 .nav-ul {
-    font-size: 1.3em;
+    font-size: 1.15em;
     color: #696969;
 }
 
 .content {
-    font-size: 1.25em;
-    line-height: 1.75em;
+    font-size: 1.15em;
+    line-height: 1.6em;
     color: #767676;
-}
-
-.content-header {
-    font-size: 1.6em;
-    font-weight: 500;
-}
-
-.sidebar-col {
-    font-size: 1.1em;
-}
-
-.sidebar-name {
-    font-weight: 700;
-    font-size: 1.6em;
-}
-
-.sidebar-ul {
-    font-size: 1.3em;
-    color: #696969;
 }
 
 .project-name span {
@@ -82,13 +57,12 @@ a:hover {
 /*spacing, margin and padding*/
 
 .nav-row {
-    margin: 3% 0 0 0;
-    padding-bottom: 2%;
-    border-bottom: 1px solid #DADADA
+    margin: 1% 0 0 0;
+    padding: 1%;
 }
 
 .nav-name {
-    padding: 2%;
+    padding: 2% 1% 1% 2%;
     margin: 0;
 }
 
@@ -98,13 +72,13 @@ a:hover {
     font-weight: 300;
 }
 
+.nav-ul {
+    border-bottom: 1px solid #DADADA;
+}
+
 .nav-sm-ul-div {
     width: 40%;
     padding: 2%;
-}
-
-.content-div {
-    padding-top: 1%;
 }
 
 .content {
@@ -112,28 +86,13 @@ a:hover {
     margin-bottom: 2%;
 }
 
-.sidebar-col {
-    padding-top: 1%;
-}
-
-.sidebar-content {
-    min-width: 90%;
-    max-width: 90%;
-    padding: 5%;
-}
-
-.sidebar-ul li {
-    padding: 2% 2% 2% 0;
-    font-weight: 300;
-}
-
-.contact-ul {
-    margin-top: 10%;
+.content-col {
+    margin-top: 5px;
 }
 
 .main-row {
-    margin: 3% 0 0 0;
-    padding-bottom: 2%;
+    margin: 0;
+    /*padding-bottom: 2%;*/
 }
 
 .project p {
@@ -145,12 +104,12 @@ a:hover {
 
 @media only screen and (min-width : 992px) {
     .content-div {
-        margin-top: 3%;
+        /*margin-top: 3%;*/
     }
 }
 
 @media only screen and (min-width : 1300px){
     .content-div {
-        margin-top: 5%;
+        /*margin-top: 5%;*/
     }
 }

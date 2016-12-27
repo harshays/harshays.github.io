@@ -8,11 +8,12 @@
     <meta name="viewport" content="width=device-width,maximum-scale=1.0"/>
     <meta http-eqiv="content-type" content="text/html; charset=utf-8"/>    
 
-    <title>Harshay</title>
+    <title>harshay</title>
 
     <!-- fonts -->
-    <link rel='stylesheet' type='text/css' href='https://fonts.googleapis.com/css?family=Ubuntu:400,300,500,700'>
     <link rel='stylesheet' type='text/css' href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700'>
+    <link rel='stylesheet' type='text/css' href='https://fonts.googleapis.com/css?family=Inconsolata:300,400,700'>
+
 
     <!-- css -->
     <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
@@ -30,57 +31,33 @@
 
     <div class="container" ng-controller="bodyController">
                 
-        <div class="hidden-md hidden-lg row nav-row">
+        <div class="row nav-row">
+  
+            <div class="col-md-2"></div>
 
-            <!-- Nav bar for sm -->
-            <div class="hidden-xs col-xs-12 nav-col">
-                <p class="nomargin pull-left nav-name">Harshay</p>
-                <div class="text-center pull-right nav-sm-ul-div">
-                    <ul class="nomargin list-inline nav-ul">
-                        <li nav="about" class="nav-li"><a ng-href="#/">About</a></li>
-                        <li nav="projects" class="nav-li"><a ng-href="#/projects">Projects</a></li>
-                    </ul>
-                </div>
-            </div>
-
-            <!-- Nav bar for xs -->
-            <div class="hidden-sm col-xs-12 nav-col">
-                <p class="nav-name">Harshay</p>
+            <div class="col-xs-12 col-md-6 nav-col">
+                <p class="nav-name">harshay</p>
                 <div class='nav-xs-ul-div'>
                     <ul class="nomargin list-inline nav-ul">
-                        <li nav="about" class="nav-li"><a ng-href="#/">About</a></li>
-                        <li nav="projects" class="nav-li"><a ng-href="#/projects">Projects</a></li>
+                        <li nav="about" class="nav-li"><a ng-href="#/">about</a></li>
+                        <li nav="projects" class="nav-li"><a ng-href="#/projects">projects</a></li>
                     </ul>
                 </div>
             </div>
+
+            <div class="col-md-4"></div>
 
         </div>
 
         <div class="row main-row">
+            
+            <div class="col-md-2"></div>
 
-            <!-- sidebar for md and lg -->
-            <div class="pull-left hidden-xs hidden-sm col-md-3 sidebar-col affix">
-                <div class="sidebar-content pull-right text-left">
-                    <p class="sidebar-name">Harshay</p>
-
-                    <ul class="list-unstyled sidebar-ul">
-                        <li nav="about" class="nav-li"><a ng-href="#/">About</a></li>
-                        <li nav="projects" class="nav-li"><a ng-href="#/projects">Projects</a></li>
-                    </ul>
-
-                    <ul class="list-unstyled sidebar-ul contact-ul">
-                        <li class="nav-li"><a ng-href="{{github}}" target="_blank">Github</a></li>
-                        <li class="nav-li"><a ng-href="{{twitter}}" target="_blank">Twitter</a></li>
-                        <li class="nav-li"><a ng-href="{{linkedin}}" target="_blank">LinkedIn</a></li>
-                    </ul>
-                </div>
-            </div>
-
-            <div class="col-xs-12 col-md-offset-4 col-md-7 col-lg-6 content-col" ng-cloak ng-view>
+            <div class="col-xs-12 col-md-6 content-col" ng-cloak ng-view>
                 <!-- content col -->
            </div>
-
-           <div class="col-md-1 col-lg-2"></div>
+           
+           <div class="col-md-4"></div>
 
         </div>
 
