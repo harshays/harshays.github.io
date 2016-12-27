@@ -1,7 +1,7 @@
 /** { border: 1px dotted grey;}*/
 
 body {
-    font-family: "Consolas";
+    font-family: "Inconsolata", "Ubuntu Mono";
     background-color: white;
  }
 
@@ -34,12 +34,12 @@ a, a:hover, a:visited {
 }
 
 .nav-ul {
-    font-size: 1.15em;
+    font-size: 1.3em;
     color: #696969;
 }
 
 .content {
-    font-size: 1.15em;
+    font-size: 1.2em;
     line-height: 1.6em;
     color: #767676;
 }
