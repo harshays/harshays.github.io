@@ -62,6 +62,7 @@ websiteApp.controller('aboutController', function($scope) {
     $scope.akuna     = 'http://www.akunacapital.com';
     $scope.timan     = 'http://sifaka.cs.uiuc.edu/ir/index.html';
     $scope.crowd     = 'http://sundaram.cs.illinois.edu/';
+    $scope.networks  = 'https://en.wikipedia.org/wiki/Complex_network'
 });
 
 websiteApp.controller('projectsController', function($scope, utils) {
@@ -77,8 +78,8 @@ websiteApp.controller('projectsController', function($scope, utils) {
 });
 
 websiteApp.controller('postsController', function($scope, utils) {
-    $scope.interests = utils.shuffle(["statistics", "exploratory data analysis", "data visualization",
-                                      "social and information networks", "machine learning"]);
+    $scope.interests = utils.shuffle(["inferential statistics", "exploratory data analysis", "data visualization",
+                                      "network science & data mining", "machine learning"]);
     $scope.end = $scope.interests.length - 1;
 });
 
