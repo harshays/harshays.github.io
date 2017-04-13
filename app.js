@@ -50,6 +50,7 @@ websiteApp.filter('slice', function() {
 
 websiteApp.controller('bodyController', function($scope) {
     $scope.email     = 'hrshah4@illinois.edu';
+    $scope.mailto    = 'mailto:'+$scope.email;
     $scope.github    = 'http://www.github.com/harshays';
     $scope.linkedin  = 'http://www.linkedin.com/in/harshayshah';
     $scope.twitter   = 'http://www.twitter.com/Harshay11';
@@ -79,8 +80,7 @@ websiteApp.controller('projectsController', function($scope, utils) {
 });
 
 websiteApp.controller('postsController', function($scope, utils) {
-    $scope.interests = utils.shuffle(["inferential statistics", "exploratory data analysis", "data visualization",
-                                      "network science & data mining", "machine learning"]);
+    $scope.interests = utils.shuffle(["network science & computational social science", "machine learning", "text mining"]);
     $scope.end = $scope.interests.length - 1;
 });
 
