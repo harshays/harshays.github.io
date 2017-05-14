@@ -74,9 +74,9 @@ websiteApp.controller('projectsController', function($scope, utils) {
         ["pyuiuc", "python api wrapper for UIUC courses", "https://github.com/harshays/pyuiuc"],
         ["southwest", "python utility to schedule southwest check-ins", "https://github.com/harshays/southwest"],
         ["prioritize", "task management web app", "https://github.com/harshays/prioritize"],
-        ["papers", "reviews and/or summaries of papers", "https://github.com/harshays/papers"],
+        ["notes", "reviews and/or summaries of papers", "https://github.com/harshays/papers"],
+        ["redditgraph", "network-based approach to find interesting subreddits", "https://harshay.me/cs410"]
     ]);
-
 });
 
 websiteApp.controller('postsController', function($scope, utils) {
@@ -91,7 +91,6 @@ websiteApp.run(function($rootScope, $location, $route, utils) {
         utils.toggleActiveNav(route);
     });
 });
-
 
 $(document).ready(function() {
     $('body').hide().fadeIn();
