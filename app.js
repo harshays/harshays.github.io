@@ -75,7 +75,7 @@ websiteApp.controller('projectsController', function($scope, utils) {
         ["southwest", "python utility to schedule southwest check-ins", "https://github.com/harshays/southwest"],
         ["prioritize", "task management web app", "https://github.com/harshays/prioritize"],
         ["notes", "reviews and/or summaries of papers", "https://github.com/harshays/papers"],
-        ["redditgraph", "network-based approach to find interesting subreddits", "https://harshay.me/cs410"]
+        ["redditgraph", "network-based approach to find interesting subreddits", "http://harshay.me/cs410"]
     ]);
 });
 
