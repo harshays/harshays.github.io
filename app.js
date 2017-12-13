@@ -64,6 +64,7 @@ websiteApp.controller('aboutController', function($scope) {
     $scope.timan     = 'http://sifaka.cs.uiuc.edu/ir/index.html';
     $scope.crowd     = 'http://sundaram.cs.illinois.edu/';
     $scope.networks  = 'https://en.wikipedia.org/wiki/Complex_network';
+    $scope.matching  = 'https://sites.google.com/site/graphmatchingmethods/';
     $scope.px        = 'https://500px.com/harshayshah';
 });
 
