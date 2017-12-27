@@ -1,115 +1,83 @@
-/** { border: 1px dotted grey;}*/
+/* * { border: 1px dotted grey; }
+div { border: 1px dotted green; } */
 
-body {
-    font-family: "Inconsolata", "Ubuntu Mono";
-    background-color: white;
- }
-
- ::-webkit-scrollbar {
-     display: none;
- }
-
+::-webkit-scrollbar { display: none; }
 .nomargin  { margin: 0 !important; }
-
-/*text*/
+.container-fluid { margin-top: 5%; margin-bottom: 3%; }
+.name-box { margin-top: 7%; }
+.content-row { margin-top: 15px; }
+.delim { color: #d3d3d3; }
+.nav-links { font-size: 1.3em; }
+.rproj-row { margin-top: 5%; }
+td { font-size: 1.1em !important; }
+.project-div { padding: 1%; }
+.projects { padding: 1%; }
+a:hover { border-bottom: 1px solid gray; }
+.research-div { padding: 1%;}
 
 a, a:hover, a:visited {
     text-decoration: none;
+    color: gray;
     font-weight: 500;
 }
 
-.sidebar-col a, .nav-col a {
-    text-decoration: none;
-    color: #696969;
-    font-weight: 300;
+body {
+    font-weight: 400;
+    font-family: "Roboto", "Lato", "Helvetica";
+    background-color: white;
+    font-size: 14px;
+    border-top: 5px solid #13294b;
+    border-bottom: 5px solid #E84A27;
 }
 
-.nav-li a:hover {
-    border-bottom: none;
+.rp-name {
+    font-weight: 700;
+    font-size: 1.2em;
+    margin: 0;
+}
+
+.project-name {
+    font-weight: 500;
+    font-size: 1.2em;
+    margin: 0;
+}
+
+
+.subtext { font-size: 1.15em; }
+.rp-description { font-size: 1.15em; }
+.project-description {
+    margin: 0;
+    font-size: 1.15em;
+    padding: 1%;
+}
+
+.subheader {
+    font-weight: 700;
+    font-size: 1.5em;
+    margin: 0;
 }
 
 .nav-name {
     font-weight: 700;
+    font-size: 2em;
+    margin: 0;
+}
+
+.nav-description {
+    margin: 0;
     font-size: 1.4em;
 }
 
-.nav-ul {
-    font-size: 1.3em;
-    color: #696969;
-}
-
-.content {
-    font-size: 1.2em;
-    line-height: 1.6em;
-    color: #767676;
-}
-
-.project-name span {
-    color: black;
-    font-weight: 500;
-}
-
-.active-nav-li {
-    font-weight: 500 !important;
-}
-
-
-/*spacing, margin and padding*/
-
-.nav-row {
-    margin: 1% 0 0 0;
-    padding: 1%;
-}
-
-.nav-name {
-    padding: 2% 1% 1% 2%;
-    margin: 0;
-}
-
-.nav-ul li {
-    padding: 1% 1% 1% 2%;
-    display: inline-block;
-    font-weight: 300;
-}
-
-.nav-ul {
-    border-bottom: 1px solid #DADADA;
-}
-
-.nav-sm-ul-div {
-    width: 40%;
-    padding: 2%;
-}
-
-.content {
-    padding: 1% 3% 1% 3%;
-    margin-bottom: 2%;
-}
-
-.content-col {
-    margin-top: 5px;
-}
-
-.main-row {
-    margin: 0;
-    /*padding-bottom: 2%;*/
-}
-
-.project p {
-    margin: 0;
-    padding: 0;
+.table-borderless > tbody > tr > td,
+.table-borderless > tbody > tr > th,
+.table-borderless > tfoot > tr > td,
+.table-borderless > tfoot > tr > th,
+.table-borderless > thead > tr > td,
+.table-borderless > thead > tr > th {
+    border: none;
 }
 
 /* media query for md and lg */
+@media only screen and (min-width : 992px) {}
+@media only screen and (min-width : 1300px){}
 
-@media only screen and (min-width : 992px) {
-    .content-div {
-        /*margin-top: 3%;*/
-    }
-}
-
-@media only screen and (min-width : 1300px){
-    .content-div {
-        /*margin-top: 5%;*/
-    }
-}

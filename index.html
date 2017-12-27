@@ -6,14 +6,11 @@
     <meta type="description" content="UIUC CS and Stats Undergrad."/>
     <meta name="viewport" content="initial-scale=1"/>
     <meta name="viewport" content="width=device-width,maximum-scale=1.0"/>
-    <meta http-eqiv="content-type" content="text/html; charset=utf-8"/>    
-
-    <title>harshay</title>
+    <meta http-eqiv="content-type" content="text/html; charset=utf-8"/>
 
     <!-- fonts -->
-    <link rel='stylesheet' type='text/css' href='https://fonts.googleapis.com/css?family=Inconsolata:300,400,700'>
-    <link rel='stylesheet' type='text/css' href='https://fonts.googleapis.com/css?family=Ubuntu+Mono:300,400,700'>
-
+    <link rel='stylesheet' type='text/css' href='https://fonts.googleapis.com/css?family=Roboto:300,400,700'>
+    <link rel='stylesheet' type='text/css' href='https://fonts.googleapis.com/css?family=Lato:300,400,700'>
 
     <!-- css -->
     <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
@@ -25,45 +22,176 @@
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.14/angular-route.js"></script>
     <script type="text/javascript" src="./app.js"></script>
 
+    <title>Harshay Shah</title>
 </head>
 
 <body ng-app="websiteApp">
 
-    <div class="container" ng-controller="bodyController">
-                
+    <!-- header -->
+    <div class="container-fluid" ng-controller="bodyController">
+        <!-- first row -->
         <div class="row nav-row">
-  
             <div class="col-md-2"></div>
+            <div class="col-md-8 main-nav-row nav-col">
 
-            <div class="col-xs-12 col-md-6 nav-col">
-                <p class="nav-name">harshay</p>
-                <div class='nav-xs-ul-div'>
-                    <ul class="nomargin list-inline nav-ul">
-                        <li nav="about" class="nav-li"><a ng-href="#/">about</a></li>
-                        <li nav="projects" class="nav-li"><a ng-href="#/projects">projects</a></li>
-                    </ul>
+                <div class="col-md-6 name-box-col">
+                    <span class="name-box">
+                        <p class="nav-name">Harshay Shah</p>
+                        <p class="nav-description">Statistics and Computer Science at UIUC</p>
+                        <p class="nav-links">
+                            <a href="https://twitter.com/Harshay11" target="_blank">twitter</a> <span class="delim">//</span>
+                            <a href="https://www.linkedin.com/in/harshayshah/" target="_blank">linkedin</a>  <span class="delim">//</span>
+                            <a href="mailto:harshay.rshah@gmail.com" target="_blank">email</a> <span class="delim">//</span>
+                            <a href="https://500px.com/harshayshah" target="_blank">500px</a> <span class="delim">
+                        </p>
+                    </span>
                 </div>
+
+                <div class="col-md-3 hidden-xs">
+                    <img src="imgs/linkedin.jpg" class="img-rounded" style="max-width: 100%;">
+                </div>
+                <div class="col-md-3 hidden-xs"></div>
             </div>
-
-            <div class="col-md-4"></div>
-
-        </div>
-
-        <div class="row main-row">
-            
             <div class="col-md-2"></div>
-
-            <div class="col-xs-12 col-md-6 content-col" ng-cloak ng-view>
-                <!-- content col -->
-           </div>
-           
-           <div class="col-md-4"></div>
-
         </div>
 
-    </div>
+        <!-- about row -->
+        <div class="row content-row about-row">
+            <div class="col-md-2"></div>
+            <div class="col-md-8 main-content-row main-about-row">
+                <div class="col-md-9">
+                    <p class="subheader">About</p>
+                    <p class="subtext">
+                        I'm a third year undergraduate at the <a href="http://illinois.edu/">University
+                        of Illinois at Urbana-Champaign</a>, studying <a href="http://cs.illinois.edu/">
+                        Computer Science</a> and <a href="http://stat.illinois.edu/">Statistics</a>.
 
-</body>  
+                        My academic interests span statistics, optimization, networks and machine
+                        learning. Currently, I'm a research assistant working on
+                        <a href="https://en.wikipedia.org/wiki/Network_science">network growth models</a> and <a href="http://www.sc.ehu.es/acwbecae/ikerkuntza/these/Ch2.pdf">
+                        graph matching algorithms</a>. Before my foray into research, I was a software engineering
+                        intern at <a href="http://www.akunacapital.com/">Akuna Capital</a>.
+                    </p>
+                </div>
+                <div class="col-md-3"></div>
+            </div>
+            <div class="col-md-2"></div>
+        </div>
+
+        <!-- research row -->
+        <div class="row content-row research-row">
+            <div class="col-md-2"></div>
+            <div class="col-md-8 main-content-row main-research-row">
+                <div class="col-md-9">
+                    <p class="subheader">Research</p>
+                    <div class="row  research-div">
+                        <div class="col-md-4 text-center">
+                            <img src="imgs/growth_sm.png" class="img-rounded" style="max-width: 100px;">
+                        </div>
+                        <div class="col-md-8">
+                            <a class="rp-name" href="https://crowddynamicslab.github.io/attributed_graph_models/">Network Growth Models</a>
+                            <!-- <p class="rp-name">Network Growth Models</p> -->
+                            <p class="rp-description">
+                                We develop an interpretable growth model that jointly explains the
+                                emergence of multiple structural and content-based properties of
+                                attributed real-world networks. Advised by <a href="http://sundaram.cs.illinois.edu/">Hari Sundaram</a>.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="row rproj-row">
+                        <div class="col-md-4 text-center">
+                            <img src="imgs/alignment.png" class="img-rounded" style="max-width: 200px;">
+                        </div>
+                        <div class="col-md-8">
+                            <a class="rp-name" href="https://sites.google.com/site/graphmatchingmethods/">Graph Matching</a>
+                            <p class="rp-description">
+                                We propose a spectral graph matching algorithm and theoretically analyze its
+                                perfomance on correlated Erdős–Rényi graphs. Advised by <a href="http://swoh.web.engr.illinois.edu/">Sewoong Oh</a>.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3"></div>
+            </div>
+            <div class="col-md-2"></div>
+        </div>
+
+        <!-- relevant coursework row -->
+        <div class="row content-row coursework-row">
+            <div class="col-md-2"></div>
+            <div class="col-md-8 main-content-row main-coursework-row">
+                <div class="col-md-9">
+                    <p class="subheader">Relevant Coursework</p>
+                    <table class="table table1 table-borderless">
+                      <tbody>
+                        <tr>
+                          <td>Nonlinear Optimization</td>
+                          <td>Algorithms</td>
+                          <td>Real Analysis</td>
+                        </tr>
+                        <tr>
+                          <td>Mathematical Statistics</td>
+                          <td>Social & Information Networks</td>
+                          <td>Natural Language Processing</td>
+                        </tr>
+                        <tr>
+
+                          <td>Machine Learning</td>
+                          <td>Statistical Computing</td>
+                          <td>Data Structures</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                </div>
+                <div class="col-md-3"></div>
+            </div>
+            <div class="col-md-2"></div>
+        </div>
+
+        <!-- projects row -->
+        <div class="row content-row projects-row">
+            <div class="col-md-2"></div>
+            <div class="col-md-8 main-content-row main-projects-row">
+                <div class="col-md-9">
+                    <p class="subheader">Projects</p>
+                    <div class="projects">
+                        <div class="project-div">
+                            <!-- link to paper -->
+                            <a class="project-name" href="https://drive.google.com/file/d/1YIDpc_ofCZNjSs9DiG0UlL0_ioNlNPDR/view?usp=sharing"><b>Redditgraph</b></a>
+                            <p class="project-description">Reddit "similarity" network based on vector
+                            representations of subreddits using Latent Semantic Analysis.</p>
+                        </div>
+                           <!-- link to github repo -->
+                        <div class="project-div">
+                            <a class="project-name" href="https://github.com/harshays/pyuiuc"><b>PyUIUC</b></a>
+                            <p class="project-description">Python API wrapper to query information
+                            about UIUC courses using UIUC's Course Information Suite (CIS) API. </p>
+                        </div>
+                         <!--  link to web app -->
+                        <div class="project-div">
+                            <a class="project-name" href="https://github.com/harshays/prioritize"><b>Prioritize</b></a>
+                            <p class="project-description">Task management web application using Flask and PostgreSQL.</p>
+                        </div>
+                        <!--  link to poster -->
+                        <div class="project-div">
+                            <a class="project-name" href="https://drive.google.com/file/d/1YIDpc_ofCZNjSs9DiG0UlL0_ioNlNPDR/view?usp=sharing"><b>Topical Phrase Mining</b></a>
+                            <p class="project-description">Implemented and visualized graph-based topic modeling algorithms to extract topical phrases from large corpora</p>
+                        </div>
+
+                        <div class="project-div">
+                            <a class="project-name" href="https://github.com/harshays?tab=repositories"><b>Python Utilities</b></a>
+                            <p class="project-description">Scripts to schedule Southwest check-ins, download lectures, log information + events,
+                                clean + categorize folders and receive notifications when courses open. </p>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="col-md-3"></div>
+            </div>
+            <div class="col-md-2"></div>
+        </div>
+    </div>
+</body>
 
 <script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
@@ -73,6 +201,6 @@
 
   ga('create', 'UA-55279868-1', 'auto');
   ga('send', 'pageview');
-</script>  
+</script>
 
 </html>
