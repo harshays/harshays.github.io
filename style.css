@@ -12,13 +12,17 @@ div { border: 1px dotted green; } */
 td { font-size: 1.1em !important; }
 .project-div { padding: 1%; }
 .projects { padding: 1%; }
-a:hover { border-bottom: 1px solid gray; }
 .research-div { padding: 1%;}
 
 a, a:hover, a:visited {
     text-decoration: none;
+    font-weight: 400;
     color: gray;
-    font-weight: 500;
+    border-bottom: 1px dotted gray;
+}
+
+.nav-links a {
+    border: none;
 }
 
 body {
@@ -34,6 +38,10 @@ body {
     font-weight: 700;
     font-size: 1.2em;
     margin: 0;
+}
+
+.rp-name, .project-name a:hover {
+    font-weight: 700 !important;
 }
 
 .project-name {
@@ -67,6 +75,7 @@ body {
     margin: 0;
     font-size: 1.4em;
 }
+
 
 .table-borderless > tbody > tr > td,
 .table-borderless > tbody > tr > th,

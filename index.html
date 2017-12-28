@@ -25,16 +25,16 @@
     <title>Harshay Shah</title>
 </head>
 
-<body ng-app="websiteApp">
+<body>
 
     <!-- header -->
-    <div class="container-fluid" ng-controller="bodyController">
+    <div class="container-fluid">
         <!-- first row -->
         <div class="row nav-row">
             <div class="col-md-2"></div>
             <div class="col-md-8 main-nav-row nav-col">
 
-                <div class="col-md-6 name-box-col">
+                <div class="col-md-6 col-sm-9 name-box-col">
                     <span class="name-box">
                         <p class="nav-name">Harshay Shah</p>
                         <p class="nav-description">Statistics and Computer Science at UIUC</p>
@@ -47,7 +47,7 @@
                     </span>
                 </div>
 
-                <div class="col-md-3 hidden-xs">
+                <div class="col-md-3 col-sm-3 hidden-xs">
                     <img src="imgs/linkedin.jpg" class="img-rounded" style="max-width: 100%;">
                 </div>
                 <div class="col-md-3 hidden-xs"></div>
@@ -85,10 +85,10 @@
                 <div class="col-md-9">
                     <p class="subheader">Research</p>
                     <div class="row  research-div">
-                        <div class="col-md-4 text-center">
+                        <div class="col-sm-4 text-center">
                             <img src="imgs/growth_sm.png" class="img-rounded" style="max-width: 100px;">
                         </div>
-                        <div class="col-md-8">
+                        <div class="col-sm-8">
                             <a class="rp-name" href="https://crowddynamicslab.github.io/attributed_graph_models/">Network Growth Models</a>
                             <!-- <p class="rp-name">Network Growth Models</p> -->
                             <p class="rp-description">
@@ -99,10 +99,10 @@
                         </div>
                     </div>
                     <div class="row rproj-row">
-                        <div class="col-md-4 text-center">
+                        <div class="col-sm-4 text-center">
                             <img src="imgs/alignment.png" class="img-rounded" style="max-width: 200px;">
                         </div>
-                        <div class="col-md-8">
+                        <div class="col-sm-8">
                             <a class="rp-name" href="https://sites.google.com/site/graphmatchingmethods/">Graph Matching</a>
                             <p class="rp-description">
                                 We propose a spectral graph matching algorithm and theoretically analyze its
@@ -122,26 +122,28 @@
             <div class="col-md-8 main-content-row main-coursework-row">
                 <div class="col-md-9">
                     <p class="subheader">Relevant Coursework</p>
-                    <table class="table table1 table-borderless">
-                      <tbody>
-                        <tr>
-                          <td>Nonlinear Optimization</td>
-                          <td>Algorithms</td>
-                          <td>Real Analysis</td>
-                        </tr>
-                        <tr>
-                          <td>Mathematical Statistics</td>
-                          <td>Social & Information Networks</td>
-                          <td>Natural Language Processing</td>
-                        </tr>
-                        <tr>
+                    <div class="table-responsive">
+                        <table class="table table1 table-borderless">
+                          <tbody>
+                            <tr>
+                              <td>Nonlinear Optimization</td>
+                              <td>Algorithms</td>
+                              <td>Real Analysis</td>
+                            </tr>
+                            <tr>
+                              <td>Mathematical Statistics</td>
+                              <td>Social & Information Networks</td>
+                              <td>Natural Language Processing</td>
+                            </tr>
+                            <tr>
 
-                          <td>Machine Learning</td>
-                          <td>Statistical Computing</td>
-                          <td>Data Structures</td>
-                        </tr>
-                      </tbody>
-                    </table>
+                              <td>Machine Learning</td>
+                              <td>Statistical Computing</td>
+                              <td>Data Structures</td>
+                            </tr>
+                          </tbody>
+                        </table>
+                    </div>
                 </div>
                 <div class="col-md-3"></div>
             </div>
@@ -174,7 +176,7 @@
                         </div>
                         <!--  link to poster -->
                         <div class="project-div">
-                            <a class="project-name" href="https://drive.google.com/file/d/1YIDpc_ofCZNjSs9DiG0UlL0_ioNlNPDR/view?usp=sharing"><b>Topical Phrase Mining</b></a>
+                            <a class="project-name" href="https://drive.google.com/file/d/1pl0SBNUiFphBL4EqrtBYIyft8D-GK_ib/view?usp=sharing"><b>Topical Phrase Mining</b></a>
                             <p class="project-description">Implemented and visualized graph-based topic modeling algorithms to extract topical phrases from large corpora</p>
                         </div>
 
