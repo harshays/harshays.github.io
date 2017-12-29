@@ -1,6 +1,5 @@
 /* * { border: 1px dotted grey; }
 div { border: 1px dotted green; } */
-
 ::-webkit-scrollbar { display: none; }
 .nomargin  { margin: 0 !important; }
 .container-fluid { margin-top: 5%; margin-bottom: 3%; }
@@ -49,7 +48,6 @@ body {
     font-size: 1.2em;
     margin: 0;
 }
-
 
 .subtext { font-size: 1.15em; }
 .rp-description { font-size: 1.15em; }
