@@ -71,7 +71,7 @@ a:hover {
 
 .img-xs {
   max-width: 170px;
-  float: right;
+  /* float: right; */
 }
 
 @media(max-width:767px) {
@@ -87,16 +87,13 @@ a:hover {
     margin: 0;
   }
 
-  @media(max-width:360px) {
-    .header-row {
-      font-size: 0.8em;
-    }
+  @media(max-width:370px) {
 
-    .last-name {
+    .img-xs {
       display: none;
     }
 
-    .img-xs {
+    .last-name {
       display: none;
     }
   }
