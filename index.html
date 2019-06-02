@@ -56,7 +56,7 @@
                           <!-- <a class="icons" href="https://scholar.google.com/citations?user=oC8YKjUAAAAJ" target="_blank"><i class="ai ai-google-scholar ai-1x"></i></a> -->
                           <a class="icons" href="https://twitter.com/Harshay11" target="_blank"><i class="fab fa-twitter fa-1x"></i></a>
                           <a class="icons" href="https://github.com/" target="_blank"><i class="fab fa-github fa-1x"></i></a>
-                          <a class="icons" href="https://linkedin.com/in/harshayshah" target="_blank"><i class="fab fa-linkedin-in fa-1x"></i></a>
+                          <!-- <a class="icons" href="https://linkedin.com/in/harshayshah" target="_blank"><i class="fab fa-linkedin-in fa-1x"></i></a> -->
                           <!-- <a href="./blog"><i class="fas fa-pen-square fa-3x"></i></a> -->
                         </div>
                       </div>
@@ -129,32 +129,86 @@
           <div class="papers-content-row row">
             <div class="col-xs-12 papers-content-col">
 
+              <!-- Connected Components -->
               <div class="paper-div">
                 <a class="paper-title" target="_blank" href="https://arxiv.org/abs/1812.00139">Number of Connected Components in a Graph: Estimation via Counting Patterns</a>
+
                 <p class="paper-info">
                   <span class="paper-authors">Ashish Khetan, <span class="bold">Harshay Shah</span>, and Sewoong Oh</span><br/>
                   Submitted to <span class="paper-venue"> IEEE Transactions on Signal and Information Processing over Networks</span>
                 </p>
-                <!-- pdf abstract poster code blog  -->
+
                 <div class="paper-buttons">
                   <a href="./pdf/2018_cc_paper.pdf" target="_blank" class="paper-button">pdf</a>
-                  <a href="" class="paper-button">abstract</a>
+                  <a id="p2" href="javascript:;" class="paper-button abstract-button">abstract</a>
                 </div>
+
+                <div id="abs2" class="paper-abstract" style="display: none;">
+                  <blockquote>
+                    Due to the limited resources and the scale of the graphs in modern datasets, we
+                    often get to observe a sampled subgraph of a larger original graph of interest,
+                    whether it is the worldwide web that has been crawled or social connections that
+                    have been surveyed. Inferring a global property of the original graph from such
+                    a sampled subgraph is of a fundamental interest. In this work, we focus on
+                    estimating the number of connected components. It is a challenging problem and,
+                    for general graphs, little is known about the connection between the observed
+                    subgraph and the number of connected components of the original graph. In order
+                    to make this connection, we propose a highly redundant and large-dimensional
+                    representation of the subgraph, which at first glance seems counter-intuitive. A
+                    subgraph is represented by the counts of patterns, known as network motifs. This
+                    representation is crucial in introducing a novel estimator for the number of
+                    connected components for general graphs, under the knowledge of the spectral gap
+                    of the original graph. The connection is made precise via the Schatten \(k\)-norms
+                    of the graph Laplacian and the spectral representation of the number of
+                    connected components. We provide a guarantee on the resulting mean squared error
+                    that characterizes the bias variance tradeoff. Experiments on synthetic and
+                    real-world graphs suggest that we improve upon competing algorithms for graphs
+                    with spectral gaps bounded away from zero.
+                  </blockquote>
+                </div>
+
               </div>
 
+              <!-- ARW -->
               <div class="paper-div">
                 <a class="paper-title" target="_blank" href="https://arxiv.org/abs/1712.10195">Growing Attributed Networks through Local Processes</a>
+
                 <p class="paper-info">
                   <span class="paper-authors"><span class="bold">Harshay Shah</span>, Suhansanu Kumar, and Hari Sundaram</span><br/>
                   <span class="paper-venue">Proceedings of the World Wide Web Conference</span> (<a target="_blank" href="https://www2019.thewebconf.org/">WWW 2019</a>)
                 </p>
+
                 <div class="paper-buttons">
                   <a href="./pdf/2019_www_arw_paper.pdf" target="_blank" class="paper-button">pdf</a>
-                  <a href="" class="paper-button">abstract</a>
+                  <a id="p1" class="paper-button abstract-button">abstract</a>
                   <a href="./pdf/2019_www_arw_poster.pdf"  target="_blank" class="paper-button">poster</a>
                   <a href="https://github.com/CrowdDynamicsLab/ARW"  target="_blank" class="paper-button">code</a>
                   <a href=""  target="_blank" class="paper-button">blog post</a>
                 </div>
+
+                <div id="abs1" class="paper-abstract" style="display: none;">
+                  <blockquote>
+                    This paper proposes an attributed network growth model. Despite the
+                    knowledge that individuals use limited resources to form connections
+                    to similar others, we lack an understanding of how local and
+                    resource-constrained mechanisms explain the emergence of rich
+                    structural properties found in real-world networks. We make three
+                    contributions. First, we propose a parsimonious and accurate model of
+                    attributed network growth that jointly explains the emergence of
+                    in-degree distributions, local clustering, clustering-degree
+                    relationship and attribute mixing patterns. Second, our model is based
+                    on biased random walks and uses local processes to form edges without
+                    recourse to global network information. Third, we account for multiple
+                    sociological phenomena: bounded rationality, structural constraints,
+                    triadic closure, attribute homophily, and preferential attachment. Our
+                    experiments indicate that the proposed Attributed Random Walk (ARW)
+                    model accurately preserves network structure and attribute mixing
+                    patterns of six real-world networks; it improves upon the performance
+                    of eight state-of-the-art models by a statistically significant margin
+                    of 2.5-10x.
+                  </blockquote>
+                </div>
+
               </div>
             </div>
           </div>

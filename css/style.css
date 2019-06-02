@@ -96,7 +96,7 @@ a:hover {
   font-size: 1.6em;
   line-height: 1.3em;;
   margin-top: 2%;
-  margin-bottom: 3%;
+  margin-bottom: 4%;
 }
 
 .bold {
@@ -115,9 +115,22 @@ a:hover {
   margin: 0;
 }
 
-.paper-button {
+.paper-abstract {
+  padding: 1% 2% 0% 1%;
+}
+
+blockquote {
+  text-align: justify;
+  font-size: 0.9em;
+  line-height: 1.35em;
+  padding: 0.5% 2% 0.5% 2%;
+  color: #686868;
+}
+
+.paper-button, .paper-button:visited {
   border-radius: 5%;
-  color: #8f0000;
+  color: #8f0000 !important;
+  text-decoration: none !important;
   border: 1px solid #8f0000;
   font-size: 0.75em;
   padding: 0.3% 0.7% 0.3% 0.7%;
@@ -125,11 +138,12 @@ a:hover {
   margin-right: 0.4%;
 }
 
-.paper-button:hover {
-  color: #fffff8;
-  background-color: #8f0000;
+.paper-button:hover, .paper-button:active {
+  color: #fffff8 !important;
+  background-color: #8f0000 !important;
   text-decoration: none;
 }
+
 
 @media(max-width:767px) {
   .header-row {
