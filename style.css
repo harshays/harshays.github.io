@@ -87,7 +87,7 @@ a:hover {
     margin: 0;
   }
 
-  @media(max-width:380px) {
+  @media(max-width:360px) {
     .header-row {
       font-size: 0.8em;
     }
