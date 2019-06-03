@@ -127,7 +127,7 @@ blockquote {
   color: #686868;
 }
 
-.paper-button, .paper-button:visited {
+.paper-button, .paper-button:visited, .paper-button:active {
   border-radius: 5%;
   color: #8f0000 !important;
   text-decoration: none !important;
@@ -138,10 +138,24 @@ blockquote {
   margin-right: 0.4%;
 }
 
-.paper-button:hover, .paper-button:active {
-  color: #fffff8 !important;
-  background-color: #8f0000 !important;
-  text-decoration: none;
+@media(hover:hover) {
+  .paper-button:hover {
+    color: #fffff8 !important;
+    background-color: #8f0000 !important;
+    text-decoration: none;
+  }  
+}
+
+@media(hover:none) {
+  a {
+    text-decoration: underline;
+  }
+
+  .paper-button a, .paper-button a:hover {
+    color: #fffff8 !important;
+    background-color: #8f0000 !important;
+    text-decoration: none !important;
+  }
 }
 
 
@@ -152,7 +166,6 @@ blockquote {
 
   .header-right {
     text-align: left;
-    /* margin-top: 0; */
   }
 
   .header-right a {
