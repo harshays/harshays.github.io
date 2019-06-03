@@ -1,7 +1,3 @@
-* {
-  /* border: 0.5px dashed gray; */
-}
-
 body {
   background-color: #fffff8;
   font-size: 120%;
@@ -11,6 +7,15 @@ body {
 hr {
   margin: 0;
   border-top: 4px double #a3a3a3;
+}
+
+a {
+  color: #8f0000;
+}
+
+a:hover {
+  color: #8f0000;
+  text-decoration: underline;
 }
 
 .container {
@@ -28,13 +33,13 @@ hr {
 }
 
 .img-col {
-  padding: 2%;
+  margin-top: 1%;
 }
 
 .social-links {
   margin-top: 3%;
   margin-right: 1%;
-  font-size: 0.95em;
+  font-size: 0.9em;
 }
 
 .header-row {
@@ -77,19 +82,17 @@ hr {
   color: #8f0000;
 }
 
+.content-row {
+  margin-top: 1.1em;
+}
+
+.content-inner-row {
+  padding-bottom: 2%;
+}
+
 .content-col {
   font-size: 1.6em;
-  padding: 2% 2% 1% 2%;
   text-align: justify;
-}
-
-a {
-  color: #8f0000;
-}
-
-a:hover {
-  color: #8f0000;
-  text-decoration: underline;
 }
 
 .paper-div {
@@ -108,7 +111,7 @@ a:hover {
 }
 
 .paper-venue {
-  font-style: italic;
+  font-style: oblique;
 }
 
 .paper-info {
@@ -128,14 +131,34 @@ blockquote {
 }
 
 .paper-button, .paper-button:visited, .paper-button:active {
-  border-radius: 5%;
   color: #8f0000 !important;
   text-decoration: none !important;
   border: 1px solid #8f0000;
+  border-radius: 5%;
   font-size: 0.75em;
   padding: 0.3% 0.7% 0.3% 0.7%;
-  margin-left: 0.1%;
-  margin-right: 0.4%;
+  margin: 0 0.4% 0 0.1%;
+}
+
+.blogposts-row {
+  font-size: 1.6em;
+  padding: 0.5% 0 2% 0;
+}
+
+.blogpost-col {
+  margin-top: 1%;
+}
+
+.blogpost-date {
+  margin-right: 1.01em;
+}
+
+.blogpost-col div {
+  display: inline-block;
+}
+
+.blog-row {
+  margin-bottom: 4%;
 }
 
 @media(hover:hover) {
@@ -143,14 +166,10 @@ blockquote {
     color: #fffff8 !important;
     background-color: #8f0000 !important;
     text-decoration: none;
-  }  
+  }
 }
 
 @media(hover:none) {
-  a {
-    text-decoration: underline;
-  }
-
   .paper-button a, .paper-button a:hover {
     color: #fffff8 !important;
     background-color: #8f0000 !important;
@@ -173,15 +192,12 @@ blockquote {
     padding-left: 0;
   }
 
-  .content-col {
-    padding: 2%;
-  }
-
   .social-links {
     margin: 0;
   }
 
   @media(max-width:370px) {
+
 
     .img-xs {
       display: none;
