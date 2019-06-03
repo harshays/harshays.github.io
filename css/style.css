@@ -18,6 +18,10 @@ a:hover {
   text-decoration: underline;
 }
 
+.cricket {
+  font-size: 0.3em;
+}
+
 .container {
   margin-bottom: 3%;
 }
@@ -39,7 +43,7 @@ a:hover {
 .social-links {
   margin-top: 3%;
   margin-right: 1%;
-  font-size: 0.9em;
+  font-size: 0.75em;
 }
 
 .header-row {
@@ -104,10 +108,6 @@ a:hover {
 
 .bold {
   font-weight: 700;
-}
-
-.paper-title {
-  font-size: 1.05em;
 }
 
 .paper-venue {
