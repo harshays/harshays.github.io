@@ -17,7 +17,7 @@ a {
   color: #8f0000;
 }
 
-a:hover {
+a:hover, a:active, a:visited {
   color: #8f0000;
   text-decoration: underline;
 }
