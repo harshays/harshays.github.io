@@ -1,5 +1,5 @@
 * {
-  /* border: 1px solid black; */
+  border: 1px dotted black;
 }
 
 body {
@@ -42,13 +42,12 @@ a:hover, a:active, a:visited {
 }
 
 .img-div {
-  padding: 8%;
+  padding: 2% 5% 2% 5%;
 }
 
 .social-links {
-  margin-top: -5%;
-  margin-right: 0%;
-  font-size: 0.7em;
+  margin: 0 0 0 0;
+  font-size: 0.65em;
 }
 
 .header-row {
@@ -107,12 +106,12 @@ a:hover, a:active, a:visited {
 }
 
 .content-col {
-  font-size: 1.6em;
-  text-align: justify;
+  font-size: 1.62em;
+  text-align:  left;
 }
 
 .paper-div {
-  font-size: 1.6em;
+  font-size: 1.62em;
   line-height: 1.3em;;
   margin-bottom: 4%;
 }
