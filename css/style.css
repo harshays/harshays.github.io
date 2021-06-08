@@ -144,33 +144,36 @@ a:hover, a:active, a:visited {
 
 /* papers */
 .paper-div {
-  font-size: 1.65em;
-  line-height: 1.3em;;
+  font-size: 1.67em;
+  line-height: 1.35em;;
   margin-bottom: 4%;
-}
-
-.paper-venue {
-  font-style: italic;
-  font-size: 0.98em;
 }
 
 .paper-info {
   margin: 0;
-  font-size: 0.95em;
 }
 
-.paper-abstract {
-  padding: 1% 2% 0% 1%;
-  font-size: 0.95em;
+.paper-authors { 
+  font-size: 0.98em;
+}
+
+.paper-venue {
+  font-style: italic;
+  font-size: 0.97em;
 }
 
 .paper-venue-abbrv {
-  font-size: 0.96em;
+  font-size: 0.95em;
 }
 
 .paper-venue-abbrv a {
   font-weight: 700;
   color: black;
+}
+
+.paper-abstract {
+  padding: 1% 2% 0% 1%;
+  font-size: 0.95em;
 }
 
 blockquote {
@@ -192,7 +195,7 @@ blockquote {
 }
 
 .shields {
-  opacity: 0.65;
+  opacity: 0.85;
   filter: brightness(120%);
 }
 
