@@ -31,7 +31,7 @@ a:hover, a:active, a:visited {
 }
 
 .container {
-  margin-top: 4%;
+  margin-top: 7%;
   margin-bottom: 2%;
 }
 
@@ -96,13 +96,13 @@ a:hover, a:active, a:visited {
 
 /* Section titles */
 .subheader-row {
-  margin-top: 2%;
+  margin-top: 3%;
 }
 
 .subheader {
   font-size: 2.25em;
   font-weight: bold;
-  padding-bottom: 0;
+  padding-bottom: 0.25em;
 }
 
 /* social links base */
@@ -129,13 +129,14 @@ a:hover, a:active, a:visited {
 }
 
 .content-inner-row {
-  margin-bottom: 1.2em;
+  margin-bottom: 1.75em;
 }
 
 /* bio */
 .about-content-div {
   font-size: 1.67em;
-  margin-bottom: 1.2em;
+  margin-bottom: 0em;
+  text-align: justify;
 }
 
 .about-content-div p {
