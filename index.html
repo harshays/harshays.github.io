@@ -111,20 +111,15 @@
             <div class="col-xs-12">
               <div class="about-content-div">
                 <p>
-                  I am a research associate at <a href="https://research.google/teams/india-research-lab/">Google Research India</a>,
-                  where I work with <a href="http://praneethnetrapalli.org/">Praneeth Netrapalli</a>
-                  and <a href="http://www.prateekjain.org/">Prateek Jain</a>.
-                  I am interested in understanding and improving the robustness and reliability of machine learning systems.
+                  I am a research associate at <a href="https://research.google/teams/india-research-lab/">Google Research</a>.
+                  Before joining Google, I was a research fellow
+                  at <a href="https://www.microsoft.com/en-us/research/lab/microsoft-research-india/">Microsoft Research</a>.
+                  I obtained my B.S. in Computer Science and Statistics from the
+                  <a href="https://cs.illinois.edu/">University of Illinois at Urbana-Champaign (UIUC)</a>.
                 </p>
                 <p>
-                  Before joining Google, I was a <a href="https://www.microsoft.com/en-us/research/academic-program/research-fellows-program-at-microsoft-research-india/">research fellow</a>
-                  in the Machine Learning and Optimization group at <a href="https://www.microsoft.com/en-us/research/lab/microsoft-research-india/">Microsoft Research India</a>.
-                  I obtained my B.S. in Computer Science and Statistics from 
-                  <a href="https://cs.illinois.edu/">UIUC</a>,
-                  where I worked with <a href="http://sundaram.cs.illinois.edu/">Hari Sundaram</a>,
-                  <a href="https://homes.cs.washington.edu/~sewoong/">Sewoong Oh</a>, and
-                  <a href="http://sanmi.cs.illinois.edu/">Sanmi Koyejo</a>.
-                  In my spare time, I enjoy playing tennis and cricket.
+                  My research interests are primarily in understanding and improving the robustness and reliability of machine learning systems.
+                  In my free time, I enjoy playing tennis and table tennis.
                 </p>  
               </div>
             </div>
@@ -183,7 +178,7 @@
 
                 <div id="abs4" class="paper-abstract" style="display: none;">
                   <blockquote>
-                    Interpretability methods that seek to explain instance-specific model predictions [Simonyan et al. 2014, Smilkov et al. 2017] are often based on the premise that the magnitude of input-gradient -- gradient of the loss with respect to input -- highlights discriminative features that are relevant for prediction over non-discriminative features that are irrelevant for prediction. In this work, we introduce an evaluation framework to study this hypothesis for benchmark image classification tasks, and make two surprising observations on CIFAR-10 and Imagenet-10 datasets: (a) contrary to conventional wisdom, input gradients of standard models (i.e., trained on the original data) actually highlight irrelevant features over relevant features; (b) however, input gradients of adversarially robust models (i.e., trained on adversarially perturbed data) starkly highlight relevant features over irrelevant features. To better understand input gradients, we introduce a synthetic testbed and theoretically justify our counter-intuitive empirical findings. Our observations motivate the need to formalize and verify common assumptions in interpretability, while our evaluation framework and synthetic dataset serve as a testbed to rigorously analyze instance-specific interpretability methods.
+                    Post-hoc gradient-based interpretability methods [Simonyan et al., 2013, Smilkov et al., 2017] that provide instance-specific explanations of model predictions are often based on assumption (A): magnitude of input gradients -- gradients of logits with respect to input -- noisily highlight discriminative task-relevant features. In this work, we test the validity of assumption (A) using a three-pronged approach. First, we develop an evaluation framework, DiffROAR, to test assumption (A) on four image classification benchmarks. Our results suggest that (i) input gradients of standard models (i.e., trained on original data) may grossly violate (A), whereas (ii) input gradients of adversarially robust models satisfy (A). Second, we then introduce BlockMNIST, an MNIST-based semi-real dataset, that by design encodes a priori knowledge of discriminative features. Our analysis on BlockMNIST leverages this information to validate as well as characterize differences between input gradient attributions of standard and robust models. Finally, we theoretically prove that our empirical findings hold on a simplified version of the BlockMNIST dataset. Our findings based on the DiffROAR framework and BlockMNIST datasets motivate the need to formalize and test common assumptions in interpretability in a falsifiable manner [Leavitt and Morcos, 2020]. 
                   </blockquote>
                 </div>
               </div>
