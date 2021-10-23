@@ -75,7 +75,7 @@ a:hover, a:active, a:visited {
 }
 
 .header-xs {
-  font-size: 2.8em;
+  font-size: 3em;
   font-weight: 700;
   margin: 0;
   margin-bottom: -1%;
@@ -83,13 +83,13 @@ a:hover, a:active, a:visited {
 
 /* work abbrv */
 .bio-subheader {
-  font-size: 1.25em;
+  font-size: 1.4em;
   margin-top: -0.25em;
   margin-bottom: 0em;
 }
 
 .bio-subheader-xs {
-  font-size: 2.1em;
+  font-size: 1.9em;
   padding-bottom: 0;
   margin-bottom: 0;
 }
