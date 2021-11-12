@@ -16,6 +16,10 @@ body {
   font-family: 'Gentium Basic', 'Palatino', 'Garamond', 'Times';
 }
 
+.inner-pre {
+  font-size: 125%; 
+}
+
 hr {
   margin: 0;
   border-top: 4px double #a3a3a3;

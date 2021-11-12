@@ -168,18 +168,31 @@
                 </p>
 
                 <div class="paper-buttons">
-                  <a href="https://arxiv.org/abs/2102.12781" target="_blank" class="paper-button">arxiv</a>
-
                   <!-- change P{ID} and ABS{ID} -->
-                  <a id="p4" class="paper-button abstract-button">abstract</a>
+
+                  <a href="https://arxiv.org/abs/2102.12781" target="_blank" class="paper-button">arxiv</a>
+                  <a id="p4" class="paper-button abstract-button">summary</a>
                   <a href="https://github.com/harshays/inputgradients"  target="_blank" class="paper-button">code</a>
                   <a href="https://slideslive.com/38955783"  target="_blank" class="paper-button">talk</a>
+                  <a id="b4" class="paper-button bib-button">bib</a>
                 </div>
 
                 <div id="abs4" class="paper-abstract" style="display: none;">
                   <blockquote>
-                    Post-hoc gradient-based interpretability methods [Simonyan et al., 2013, Smilkov et al., 2017] that provide instance-specific explanations of model predictions are often based on assumption (A): magnitude of input gradients -- gradients of logits with respect to input -- noisily highlight discriminative task-relevant features. In this work, we test the validity of assumption (A) using a three-pronged approach. First, we develop an evaluation framework, DiffROAR, to test assumption (A) on four image classification benchmarks. Our results suggest that (i) input gradients of standard models (i.e., trained on original data) may grossly violate (A), whereas (ii) input gradients of adversarially robust models satisfy (A). Second, we then introduce BlockMNIST, an MNIST-based semi-real dataset, that by design encodes a priori knowledge of discriminative features. Our analysis on BlockMNIST leverages this information to validate as well as characterize differences between input gradient attributions of standard and robust models. Finally, we theoretically prove that our empirical findings hold on a simplified version of the BlockMNIST dataset. Our findings based on the DiffROAR framework and BlockMNIST datasets motivate the need to formalize and test common assumptions in interpretability in a falsifiable manner [Leavitt and Morcos, 2020]. 
+                    <strong>tl;dr</strong> We first propose an evaluation framework to test explanation fidelity and show that input gradients of standard models fail to highlight instance-specific discriminative features on image classification datasets. Then, we develop an MNIST-based testbed and show that input gradients lack fidelity due to <em>feature leakage</em>. We also show that adversarial robustness mitigates feature leakage and results in input gradients that reliably highlight instance-specific discriminative features.
+                    <br><br>
+                    <strong>Abstract</strong> Post-hoc gradient-based interpretability methods [Simonyan et al., 2013, Smilkov et al., 2017] that provide instance-specific explanations of model predictions are often based on assumption (A): magnitude of input gradients -- gradients of logits with respect to input -- noisily highlight discriminative task-relevant features. In this work, we test the validity of assumption (A) using a three-pronged approach. First, we develop an evaluation framework, DiffROAR, to test assumption (A) on four image classification benchmarks. Our results suggest that (i) input gradients of standard models (i.e., trained on original data) may grossly violate (A), whereas (ii) input gradients of adversarially robust models satisfy (A). Second, we introduce BlockMNIST, an MNIST-based semi-real dataset, that by design encodes a priori knowledge of discriminative features. Our analysis on BlockMNIST leverages this information to validate as well as characterize differences between input gradient attributions of standard and robust models. Finally, we theoretically prove that our empirical findings hold on a simplified version of the BlockMNIST dataset. Specifically, we prove that input gradients of standard one-hidden-layer MLPs trained on this dataset do not highlight instance-specific signal coordinates, thus grossly violating assumption (A). Our findings motivate the need to formalize and test common assumptions in interpretability in a falsifiable manner [Leavitt and Morcos, 2020]. We believe that the DiffROAR evaluation framework and BlockMNIST-based datasets can serve as sanity checks to audit instance-specific interpretability methods; code and data available at <a href="https://github.com/harshays/inputgradients">github.com/harshays/inputgradients</a>.
                   </blockquote>
+                </div>
+
+                <div id="bib4" class="paper-bib" style="display: none;">
+                  <pre xml:space="preserve">
+  @article{shah2021input,
+    title={Do Input Gradients Highlight Discriminative Features?},
+    author={Shah, Harshay and Jain, Prateek and Netrapalli, Praneeth},
+    journal={arXiv preprint arXiv:2102.12781},
+    year={2021}
+  }</pre>                  
                 </div>
               </div>
 
@@ -205,16 +218,30 @@
                   <a href="https://arxiv.org/abs/2006.07710v2" target="_blank" class="paper-button">arxiv</a>
 
                   <!-- change P{ID} and ABS{ID} -->
-                  <a id="p3" class="paper-button abstract-button">abstract</a>
+                  <a id="p3" class="paper-button abstract-button">summary</a>
                   <a href="https://drive.google.com/file/d/10McXcIyTM8pxJE2edqcvO2cBxmq8is2P/view?usp=sharing"  target="_blank" class="paper-button">poster</a>
                   <a href="https://github.com/harshays/simplicitybiaspitfalls"  target="_blank" class="paper-button">code</a>
                   <a href="https://slideslive.com/38935941"  target="_blank" class="paper-button">talk</a>
+                  <a id="b3" class="paper-button bib-button">bib</a>
                 </div>
 
                 <div id="abs3" class="paper-abstract" style="display: none;">
                   <blockquote>
-                    Several works have proposed Simplicity Bias (SB)&mdash;the tendency of standard training procedures such as Stochastic Gradient Descent (SGD) to find simple models&mdash;to justify why neural networks generalize well [Arpit et al. 2017, Nakkiran et al. 2019, Soudry et al. 2018]. However, the precise notion of simplicity remains vague. Furthermore, previous settings that use SB to theoretically justify why neural networks generalize well do not simultaneously capture the non-robustness of neural networks&mdash;a widely observed phenomenon in practice [Goodfellow et al. 2014, Jo and Bengio 2017]. We attempt to reconcile SB and the superior standard generalization of neural networks with the non-robustness observed in practice by designing datasets that (a) incorporate a precise notion of simplicity, (b) comprise multiple predictive features with varying levels of simplicity, and (c) capture the non-robustness of neural networks trained on real data. Through theory and empirics on these datasets, we make four observations: (i) SB of SGD and variants can be extreme: neural networks can exclusively rely on the simplest feature and remain invariant to all predictive complex features. (ii) The extreme aspect of SB could explain why seemingly benign distribution shifts and small adversarial perturbations significantly degrade model performance. (iii) Contrary to conventional wisdom, SB can also hurt generalization on the same data distribution, as SB persists even when the simplest feature has less predictive power than the more complex features. (iv) Common approaches to improve generalization and robustness&mdash;ensembles and adversarial training&mdash;can fail in mitigating SB and its pitfalls. Given the role of SB in training neural networks, we hope that the proposed datasets and methods serve as an effective testbed to evaluate novel algorithmic approaches aimed at avoiding the pitfalls of SB.
+                    <strong>tl;dr</strong> Simplicity bias&mdash;the tendency of SGD to learn "simple" classifiers&mdash;can be extreme in practice; neural networks can exclusively rely on the simplest feature and remain invariant to all complex features. This explains why seemingly benign distribution shifts and adversarial perturbations nullify model performance. Standard approaches to improve generalization and robustness can fail in mitigating extreme simplicity bias.
+                    <br><br>
+                    <strong>Abstract</strong> Several works have proposed Simplicity Bias (SB)&mdash;the tendency of standard training procedures such as Stochastic Gradient Descent (SGD) to find simple models&mdash;to justify why neural networks generalize well [Arpit et al. 2017, Nakkiran et al. 2019, Soudry et al. 2018]. However, the precise notion of simplicity remains vague. Furthermore, previous settings that use SB to theoretically justify why neural networks generalize well do not simultaneously capture the non-robustness of neural networks&mdash;a widely observed phenomenon in practice [Goodfellow et al. 2014, Jo and Bengio 2017]. We attempt to reconcile SB and the superior standard generalization of neural networks with the non-robustness observed in practice by designing datasets that (a) incorporate a precise notion of simplicity, (b) comprise multiple predictive features with varying levels of simplicity, and (c) capture the non-robustness of neural networks trained on real data. Through theory and empirics on these datasets, we make four observations: (i) SB of SGD and variants can be extreme: neural networks can exclusively rely on the simplest feature and remain invariant to all predictive complex features. (ii) The extreme aspect of SB could explain why seemingly benign distribution shifts and small adversarial perturbations significantly degrade model performance. (iii) Contrary to conventional wisdom, SB can also hurt generalization on the same data distribution, as SB persists even when the simplest feature has less predictive power than the more complex features. (iv) Common approaches to improve generalization and robustness&mdash;ensembles and adversarial training&mdash;can fail in mitigating SB and its pitfalls. Given the role of SB in training neural networks, we hope that the proposed datasets and methods serve as an effective testbed to evaluate novel algorithmic approaches aimed at avoiding the pitfalls of SB;  code and data available at <a href="https://github.com/harshays/simplicitybiaspitfalls/">github.com/harshays/simplicitybiaspitfalls</a>. 
                   </blockquote>
+                </div>
+
+                <div id="bib3" class="paper-bib" style="display: none;">
+                  <pre xml:space="preserve">
+  @article{shah2020pitfalls,
+    title={The Pitfalls of Simplicity Bias in Neural Networks},
+    author={Shah, Harshay and Tamuly, Kaustav and Raghunathan, Aditi and Jain, Prateek and Netrapalli, Praneeth},
+    journal={Advances in Neural Information Processing Systems},
+    volume={33},
+    year={2020}
+  }</pre>                  
                 </div>
               </div>
 
@@ -235,16 +262,31 @@
 
                 <div class="paper-buttons">
                   <a href="https://arxiv.org/abs/1712.10195" target="_blank" class="paper-button">arxiv</a>
-                  <a id="p2" class="paper-button abstract-button">abstract</a>
+                  <a id="p2" class="paper-button abstract-button">summary</a>
                   <a href="https://drive.google.com/file/d/17S9guz_R7K9ulv3trLCIQQjQk6i4VOfm/view?usp=sharing"  target="_blank" class="paper-button">poster</a>
                   <a href="https://github.com/CrowdDynamicsLab/ARW"  target="_blank" class="paper-button">code</a>
                   <a href="https://crowddynamicslab.github.io/networks/2019/06/06/Growing-Attributed-Networks/"  target="_blank" class="paper-button">blog post</a>
+                  <a id="b2" class="paper-button bib-button">bib</a>
                 </div>
 
                 <div id="abs2" class="paper-abstract" style="display: none;">
                   <blockquote>
-                    This paper proposes an attributed network growth model. Despite the knowledge that individuals use limited resources to form connections to similar others, we lack an understanding of how local and resource-constrained mechanisms explain the emergence of rich structural properties found in real-world networks. We make three contributions. First, we propose a parsimonious and accurate model of attributed network growth that jointly explains the emergence of in-degree distributions, local clustering, clustering-degree relationship and attribute mixing patterns. Second, our model is based on biased random walks and uses local processes to form edges without recourse to global network information. Third, we account for multiple sociological phenomena: bounded rationality, structural constraints, triadic closure, attribute homophily, and preferential attachment. Our experiments indicate that the proposed Attributed Random Walk (ARW) model accurately preserves network structure and attribute mixing patterns of six real-world networks; it improves upon the performance of eight state-of-the-art models by a statistically significant margin of 2.5-10x.
+                    <strong>tl;dr</strong> An interpretable network growth model based on random walks that uniﬁes link formation phenomena and individual resource constraints to jointly preserve global structural properties and nodal attribute mixing patterns of real-world attributed networks.
+                    <br><br>
+                    <strong>Abstract</strong> This paper proposes an attributed network growth model. Despite the knowledge that individuals use limited resources to form connections to similar others, we lack an understanding of how local and resource-constrained mechanisms explain the emergence of rich structural properties found in real-world networks. We make three contributions. First, we propose a parsimonious and accurate model of attributed network growth that jointly explains the emergence of in-degree distributions, local clustering, clustering-degree relationship and attribute mixing patterns. Second, our model is based on biased random walks and uses local processes to form edges without recourse to global network information. Third, we account for multiple sociological phenomena: bounded rationality, structural constraints, triadic closure, attribute homophily, and preferential attachment. Our experiments indicate that the proposed Attributed Random Walk (ARW) model accurately preserves network structure and attribute mixing patterns of six real-world networks; it improves upon the performance of eight state-of-the-art models by a statistically significant margin of 2.5-10x.
                   </blockquote>
+                </div>
+
+                <div id="bib2" class="paper-bib" style="display: none;">
+                  <pre xml:space="preserve">
+  @inproceedings{shah2019growing,
+    title={Growing Attributed Networks through Local Processes},
+    author={Shah, Harshay and Kumar, Suhansanu and Sundaram, Hari},
+    booktitle={The World Wide Web Conference},
+    pages={3208--3214},
+    year={2019},
+    organization={ACM}
+  }</pre>                  
                 </div>
               </div>
 
@@ -264,14 +306,27 @@
 
                 <div class="paper-buttons">
                   <a href="https://arxiv.org/abs/1812.00139" target="_blank" class="paper-button">arxiv</a>
-                  <a id="p1" class="paper-button abstract-button">abstract</a>
+                  <a id="p1" class="paper-button abstract-button">summary</a>
                   <a href="https://github.com/harshays/connectedcomponents"  target="_blank" class="paper-button">code</a>
+                  <a id="b1" class="paper-button bib-button">bib</a>
                 </div>
 
                 <div id="abs1" class="paper-abstract" style="display: none;">
                   <blockquote>
-                    Due to resource constraints and restricted access to large-scale graph datasets, it is often necessary to work with a sampled subgraph of a larger original graph. The task of inferring a global property of the original graph from the sampled subgraph is of fundamental interest. In this work, we focus on estimating the number of connected components. Due to the inherent difficulty of the problem for general graphs, little is known about the connection between the number of connected components in the observed subgraph and the original graph. To make this connection, we propose a highly redundant motif-based representation of the observed subgraph, which, at first glance, may seem counter-intuitive. However, the proposed representation is crucial in introducing a  novel estimator for the number of connected components in general graphs. The connection is made precise via the Schatten \(k\)-norms of the graph Laplacian and the spectral representation of the number of connected components.  We provide a guarantee on the resulting mean squared error that characterizes the bias-variance trade-off. Furthermore, our experiments on synthetic and real-world graphs show that we improve upon competing algorithms for graphs with spectral gaps bounded away from zero.
+                    <strong>tl;dr</strong> A motif-based spectral approach to estimate the number of connected components from a sampled subgraph of a larger original graph (with spectral gap bounded away from zero).
+                    <br><br>
+                    <strong>Abstract</strong> Due to resource constraints and restricted access to large-scale graph datasets, it is often necessary to work with a sampled subgraph of a larger original graph. The task of inferring a global property of the original graph from the sampled subgraph is of fundamental interest. In this work, we focus on estimating the number of connected components. Due to the inherent difficulty of the problem for general graphs, little is known about the connection between the number of connected components in the observed subgraph and the original graph. To make this connection, we propose a highly redundant motif-based representation of the observed subgraph, which, at first glance, may seem counter-intuitive. However, the proposed representation is crucial in introducing a  novel estimator for the number of connected components in general graphs. The connection is made precise via the Schatten \(k\)-norms of the graph Laplacian and the spectral representation of the number of connected components.  We provide a guarantee on the resulting mean squared error that characterizes the bias-variance trade-off. Furthermore, our experiments on synthetic and real-world graphs show that we improve upon competing algorithms for graphs with spectral gaps bounded away from zero.
                   </blockquote>
+                </div>
+
+                <div id="bib1" class="paper-bib" style="display: none;">
+                  <pre xml:space="preserve">
+  @article{khetan2018number,
+    title={Number of Connected Components in a Graph: Estimation via Counting Patterns},
+    author={Khetan, Ashish and Shah, Harshay and Oh, Sewoong},
+    journal={arXiv preprint arXiv:1812.00139},
+    year={2018}
+  }</pre>                  
                 </div>
               </div>
 
