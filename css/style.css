@@ -73,7 +73,7 @@ a:hover, a:active, a:visited {
 
 /* name */
 .header {
-  font-size: 2em;
+  font-size: 1.8em;
   font-weight: 700;
   margin: 0;
 }
@@ -87,7 +87,7 @@ a:hover, a:active, a:visited {
 
 /* work abbrv */
 .bio-subheader {
-  font-size: 1.4em;
+  font-size: 1.1em;
   margin-top: -0.25em;
   margin-bottom: 0em;
 }
