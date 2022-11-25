@@ -50,9 +50,8 @@
                           <a class="icons" href="mailto:harshay@mit.edu" target="_blank"><i class="fas fa-envelope-square fa-1x"></i></a>
                           <a class="icons" href="https://twitter.com/harshays_" target="_blank"><i class="fab fa-twitter-square fa-1x"></i></a>
                           <a class="icons" href="https://github.com/harshays" target="_blank"><i class="fab fa-github-square fa-1x"></i></a>
-                          <a class="icons" href="https://scholar.google.com/citations?user=oC8YKjUAAAAJ" target="_blank"><i class="ai ai-google-scholar-square ai-1x"></i></a>
-                          <a class="icons" href="https://linkedin.com/in/harshayshah" target="_blank"><i class="fab fa-linkedin fa-1x"></i></a>
-                          <!-- <a href="./blog"><i class="fas fa-pen-square fa-3x"></i></a> -->
+                          <a class="icons" href="https://scholar.google.com/citations?hl=en&user=oC8YKjUAAAAJ&view_op=list_works&sortby=pubdate" target="_blank"><i class="ai ai-google-scholar-square ai-1x"></i></a>
+                          <!-- <a class="icons" href="https://linkedin.com/in/harshayshah" target="_blank"><i class="fab fa-linkedin fa-1x"></i></a> -->
                         </div>
                       </div>
                     </div>
@@ -83,9 +82,8 @@
                 <a class="icons" href="mailto:harshay@mit.edu" target="_blank"><i class="fas fa-envelope-square fa-1x"></i></a>
                 <a class="icons" href="https://twitter.com/harshays_" target="_blank"><i class="fab fa-twitter-square fa-1x"></i></a>
                 <a class="icons" href="https://github.com/harshays" target="_blank"><i class="fab fa-github-square fa-1x"></i></a>
-                <a class="icons" href="https://scholar.google.com/citations?user=oC8YKjUAAAAJ" target="_blank"><i class="ai ai-google-scholar-square ai-1x"></i></a>
-                <a class="icons" href="https://linkedin.com/in/harshayshah" target="_blank"><i class="fab fa-linkedin fa-1x"></i></a>
-                <!-- <a href="./blog"><i class="fas fa-pen-square fa-3x"></i></a> -->
+                <a class="icons" href="https://scholar.google.com/citations?hl=en&user=oC8YKjUAAAAJ&view_op=list_works&sortby=pubdate" target="_blank"><i class="ai ai-google-scholar-square ai-1x"></i></a>
+                <!-- <a class="icons" href="https://linkedin.com/in/harshayshah" target="_blank"><i class="fab fa-linkedin fa-1x"></i></a> -->
               </div>
             </div>
 
@@ -140,6 +138,50 @@
           <div class="papers-content-row row">
             <div class="col-xs-12 papers-content-col">
 
+              <!-- ModelDiff -->
+              <div class="paper-div">
+                <a class="paper-title" target="_blank" href="https://arxiv.org/abs/2211.12491">ModelDiff: A Framework for Comparing Learning Algorithms</a>
+
+                <p class="paper-info hidden-xs">
+                  <span class="paper-authors"><span class="underline">Harshay Shah</span>*, Sung Min Park*, Andrew Ilyas*, Aleksander Mądry</span><br/>
+                  <span class="paper-venue paper-venue-workshop">NeurIPS Workshop on Distribution Shifts</span>
+                  <span class="paper-venue-workshop"><span class="paper-venue-abbrv">(<a target="_blank" href="https://sites.google.com/view/distshift2022/home?authuser=0">NeurIPS DistShift</a>)</span>, 2022</span>
+                </p>
+
+                <p class="paper-info hidden-sm hidden-md hidden-lg">
+                  <span class="paper-authors"><span class="underline">H. Shah</span>*, S. M. Park*, A. Ilyas*, A. Mądry</span><br/>
+                  <span class="paper-venue-workshop"><span class="paper-venue-abbrv"><a target="_blank" href="https://sites.google.com/view/distshift2022/home?authuser=0">NeurIPS DistShift</a></span>, 2022</span>
+                </p>
+
+                <div class="paper-buttons">
+                  <!-- change P{ID} and ABS{ID} -->
+
+                  <a href="https://arxiv.org/abs/2211.12491" target="_blank" class="paper-button">arxiv</a>
+                  <a id="p5" class="paper-button abstract-button">abstract</a>
+                  <a href="pdf/poster_modeldiff.pdf"  target="_blank" class="paper-button">poster</a>
+                  <a href="https://github.com/MadryLab/modeldiff"  target="_blank" class="paper-button">code</a>
+                  <a href="https://gradientscience.org/modeldiff/" target="_blank" class="paper-button">blog post</a>
+                  <a id="b5" class="paper-button bib-button">bib</a>
+                </div>
+
+                <div id="abs5" class="paper-abstract" style="display: none;">
+                  <blockquote>
+                    We study the problem of (learning) algorithm comparison, where the goal is to find differences between models trained with two different learning algorithms. We begin by formalizing this goal as one of finding distinguishing feature transformations, i.e., input transformations that change the predictions of models trained with one learning algorithm but not the other. We then present ModelDiff, a method that leverages the datamodels framework (Ilyas et al., 2022) to compare learning algorithms based on how they use their training data. We demonstrate ModelDiff through three case studies, comparing models trained with/without data augmentation, with/without pre-training, and with different SGD hyperparameters. Our code is available at <a href="https://github.com/MadryLab/modeldiff">github.com/MadryLab/modeldiff</a>
+                  </blockquote>
+                </div>
+
+                <div id="bib5" class="paper-bib" style="display: none;">
+                  <pre xml:space="preserve">
+@article{shah2022modeldiff,
+  title={ModelDiff: A Framework for Comparing Learning Algorithms},
+  author = {Harshay Shah and Sung Min Park and Andrew Ilyas and Aleksander Madry},
+  booktitle = {ArXiv preprint arXiv:2211.12491},
+  year = {2022}
+}</pre>
+                </div>
+              </div>
+
+
               <!-- Input Gradients -->
               <div class="paper-div">
                 <a class="paper-title" target="_blank" href="https://arxiv.org/abs/2102.12781">Do Input Gradients Highlight Discriminative Features?</a>
@@ -148,10 +190,10 @@
                   <span class="paper-authors"><span class="underline">Harshay Shah</span>, Prateek Jain, Praneeth Netrapalli</span><br/>
                   <span class="paper-venue">Neural Information Processing Systems</span>
                   <span class="paper-venue-abbrv">(<a target="_blank" href="https://neurips.cc/Conferences/2020">NeurIPS</a>)</span>, 2021<br>
-                  <span class="paper-venue paper-venue-workshop">ICLR workshop on Science and Engineering of Deep Learning</span>
-                  <span class="paper-venue-workshop"><span class="paper-venue-abbrv">(<a target="_blank" href="https://sites.google.com/view/sedl-workshop">ICLR SEDL</a>)</span>, 2021</span>
+                  <span class="paper-venue paper-venue-workshop">ICLR Workshop on Science and Engineering of Deep Learning</span>
+                  <span class="paper-venue-workshop"><span class="paper-venue-abbrv">(<a target="_blank" href="https://sites.google.com/view/sedl-workshop/past-editions/2021?authuser=0">ICLR SEDL</a>)</span>, 2021</span>
                   <img class="shields" src="https://img.shields.io/badge/-oral-darkred?style=flat-square" alt=""><br>
-                  <span class="paper-venue paper-venue-workshop">ICLR workshop on Responsible AI</span>
+                  <span class="paper-venue paper-venue-workshop">ICLR Workshop on Responsible AI</span>
                   <span class="paper-venue-workshop"><span class="paper-venue-abbrv">(<a target="_blank" href="https://sites.google.com/view/rai-workshop/">ICLR RAI</a>)</span>, 2021</span>
                   <img class="shields" src="https://img.shields.io/badge/-oral-darkred?style=flat-square" alt=""><br>
                 </p>
@@ -159,7 +201,7 @@
                 <p class="paper-info hidden-sm hidden-md hidden-lg">
                   <span class="paper-authors"><span class="underline">H. Shah</span>, P. Jain, P. Netrapalli</span><br/>
                   <span class="paper-venue-abbrv"><a target="_blank" href="https://neurips.cc/Conferences/2021">NeurIPS</a></span>, 2021<br>
-                  <span class="paper-venue-workshop"><span class="paper-venue-abbrv"><a target="_blank" href="https://sites.google.com/view/sedl-workshop">ICLR SEDL</a></span>, 2021</span>
+                  <span class="paper-venue-workshop"><span class="paper-venue-abbrv"><a target="_blank" href="https://sites.google.com/view/sedl-workshop/past-editions/2021?authuser=0">ICLR SEDL</a></span>, 2021</span>
                   <img class="shields" src="https://img.shields.io/badge/-oral-darkred?style=flat-square" alt=""><br>
                   <span class="paper-venue-workshop"><span class="paper-venue-abbrv"><a target="_blank" href="https://sites.google.com/view/rai-workshop/">ICLR RAI</a></span>, 2021</span>
                   <img class="shields" src="https://img.shields.io/badge/-oral-darkred?style=flat-square" alt=""><br>
@@ -202,7 +244,7 @@
                   <span class="paper-authors"><span class="underline">Harshay Shah</span>, Kaustav Tamuly, Aditi Raghunathan, Prateek Jain, Praneeth Netrapalli</span><br/>
                   <span class="paper-venue">Neural Information Processing Systems</span>
                   <span class="paper-venue-abbrv">(<a target="_blank" href="https://neurips.cc/Conferences/2020">NeurIPS</a>)</span>, 2020<br>
-                  <span class="paper-venue paper-venue-workshop">ICML workshop on Uncertainty and Robustness in Deep Learning</span>
+                  <span class="paper-venue paper-venue-workshop">ICML Workshop on Uncertainty and Robustness in Deep Learning</span>
                   <span class="paper-venue-workshop"><span class="paper-venue-abbrv">(<a target="_blank" href="https://sites.google.com/view/udlworkshop2020/home">ICML UDL</a>)</span>, 2020<br>
                 </span>
                 </p>
