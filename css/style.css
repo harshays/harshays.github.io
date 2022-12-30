@@ -40,13 +40,13 @@ a:hover, a:active, a:visited {
 }
 
 .img-md {
-  max-height: 150px;
+  max-height: 125px;
   height: auto;
   width: auto;
 }
 
 .img-xs {
-  max-width: 150px;
+  max-width: 125px;
   padding: 0em 0em 0em 3em;
 }
 
@@ -149,7 +149,7 @@ a:hover, a:active, a:visited {
 
 /* papers */
 .paper-div {
-  font-size: 1.67em;
+  font-size: 1.6em;
   line-height: 1.35em;;
   margin-bottom: 4%;
 }
@@ -159,7 +159,7 @@ a:hover, a:active, a:visited {
 }
 
 .paper-authors {
-  font-size: 0.98em;
+  font-size: 0.96em;
 }
 
 .paper-venue {
@@ -184,8 +184,6 @@ a:hover, a:active, a:visited {
   color: rgb(119, 119, 119);
   font-size: 0.95em;
 }
-
-
 
 .paper-abstract {
   padding: 1% 2% 0% 1%;
