@@ -25,6 +25,10 @@ hr {
   border-top: 4px double #a3a3a3;
 }
 
+.selected-button-span {
+  font-size: 60%;
+}
+
 a {
   color: #8f0000;
 }
