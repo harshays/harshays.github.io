@@ -1,5 +1,5 @@
 $(document).ready(function () {
-  $('.paper-div-ns').toggle();
+  //   $('.paper-div-ns').toggle();
   $('body').hide().fadeIn();
   var onlySelected = true;
 
@@ -15,14 +15,14 @@ $(document).ready(function () {
     $(bib).toggle();
   });
 
-  $('#selected-button').click(function (e) {
-    if (onlySelected) {
-      e.target.innerText = 'Show selected';
-      onlySelected = false;
-    } else {
-      e.target.innerText = 'Show all';
-      onlySelected = true;
-    }
-    $('.paper-div-ns').toggle();
-  });
+  //   $('#selected-button').click(function (e) {
+  //     if (onlySelected) {
+  //       e.target.innerText = 'Show selected';
+  //       onlySelected = false;
+  //     } else {
+  //       e.target.innerText = 'Show all';
+  //       onlySelected = true;
+  //     }
+  //     $('.paper-div-ns').toggle();
+  //   });
 });
