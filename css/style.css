@@ -12,7 +12,7 @@
 
 body {
   background-color: white;
-  font-size: 125%;
+  font-size: 120%;
   font-family: 'Gentium Basic', 'Palatino', 'Garamond', 'Times';
 }
 
@@ -153,7 +153,7 @@ a:hover, a:active, a:visited {
 
 /* papers */
 .paper-div {
-  font-size: 1.6em;
+  font-size: 1.65em;
   line-height: 1.35em;;
   margin-bottom: 4%;
 }
@@ -217,6 +217,15 @@ blockquote {
   filter: brightness(120%);
 }
 
+.paper-bib {
+    background-color: #f9f9f9; /* Light grey background */
+    border: 1px solid #ddd; /* Light grey border */
+    border-radius: 5px; /* Rounded corners */
+    font-family: 'Courier New', monospace; /* Monospace font */
+    overflow: auto; /* Adds scroll bar if the content overflows */
+    white-space: nowrap; /* Preserves spaces and line breaks */
+  }
+
 @media(hover:hover) {
   .paper-button:hover {
     color: #fffff8 !important;
@@ -264,3 +273,4 @@ blockquote {
     }
   }
 }
+
