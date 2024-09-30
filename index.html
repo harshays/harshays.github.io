@@ -141,21 +141,24 @@
 
               <!-- ContextCite -->
               <div class="paper-div" id="contextcite">
-                <a class="paper-title" target="_blank" href="https://arxiv.org/abs/TODO">ContextCite: Attributing Model Generation to Context</a>
+                <a class="paper-title" target="_blank" href="https://gradientscience.org/contextcite/">ContextCite: Attributing Model Generation to Context</a>
 
                 <p class="paper-info hidden-xs">
                   <span class="paper-authors">Benjamin Cohen-Wang*, <span class="underline">Harshay Shah*</span>, Kristian Georgiev*, Aleksander Mądry</span><br/>
+                  <span class="paper-venue paper-venue-workshop">Workshop on Next Generation AI Safety</span>
+                  <span class="paper-venue-workshop"><span class="paper-venue-abbrv">(<a target="_blank" href="https://icml-nextgenaisafety.github.io/">ICML NextGenAISafety</a>)</span>, 2024</span>
                 </p>
 
                 <p class="paper-info hidden-sm hidden-md hidden-lg">
-                  <span class="paper-authors">B. Cohen-Wang, <span class="underline">H. Shah</span>, K. Georgiev, A. Mądry</span><br/>
+                  <span class="paper-authors">B. Cohen-Wang*, <span class="underline">H. Shah*</span>, K. Georgiev*, A. Mądry</span><br/>
+                  <span class="paper-venue-workshop"><span class="paper-venue-abbrv"><a target="_blank" href="https://icml-nextgenaisafety.github.io/">ICML NextGenAISafety</a></span>, 2024</span>
                 </p>
 
                 <div class="paper-buttons">
                   <!-- change P{ID} B{ID} and ABS{ID} -->
 
                   <!-- <a href="https://arxiv.org/abs/TODO" target="_blank" class="paper-button">arxiv</a> -->
-                  <!-- <a id="p7" class="paper-button abstract-button">abstract</a> -->
+                  <a id="p7" class="paper-button abstract-button">abstract</a>
                   <a href="https://github.com/MadryLab/context-cite"  target="_blank" class="paper-button">code</a>
                   <a href="https://gradientscience.org/contextcite/" target="_blank" class="paper-button">blog post #1</a>
                   <a href="https://gradientscience.org/contextcite-applications/" target="_blank" class="paper-button">blog post #2</a>
@@ -165,13 +168,20 @@
 
                 <div id="abs7" class="paper-abstract" style="display: none;">
                   <blockquote>
-                    TODO
+                    How do language models actually use information provided as context when generating a response? Can we infer whether a particular generated statement is actually grounded in the context, a misinterpretation, or fabricated? To help answer these questions, we introduce the problem of context attribution: pinpointing the parts of the context (if any) that led a model to generate a particular statement. We then present ContextCite, a simple and scalable method for context attribution that can be applied on top of any existing language model. Finally, we showcase the utility of ContextCite through two case studies: (1) automatically verifying statements based on the attributed parts of the context and (2) improving response quality by extracting query-relevant information from the context.
                   </blockquote>
                 </div>
 
                 <div id="bib7" style="display: none;">
                     <pre class="language-bib" class="paper-bib" data-lang>
-TODO</pre>
+@misc{cohenwang2024contextcite,
+  author = {Benjamin Cohen-Wang, Harshay Shah, Kristian Georgiev, Aleksander Madry},
+  title = {ContextCite: Attributing Model Generation to Context},
+  year = {2024},
+  publisher = {GitHub},
+  journal = {GitHub repository},
+  howpublished = {\url{https://github.com/MadryLab/context-cite/tree/main}},
+}</pre>
                 </div>
               </div>
 
@@ -186,11 +196,14 @@ TODO</pre>
                   <span class="paper-authors"><span class="underline">Harshay Shah</span>, Andrew Ilyas, Aleksander Mądry</span><br/>
                   <span class="paper-venue">International Conference on Machine Learning</span>
                   <span class="paper-venue-abbrv">(<a target="_blank" href="https://icml.cc/Conferences/2024">ICML</a>)</span>, 2024<br>
+                  <span class="paper-venue paper-venue-workshop">+ Workshop on High-dimensional Learning Dynamics</span>
+                  <span class="paper-venue-workshop"><span class="paper-venue-abbrv">(<a target="_blank" href="https://sites.google.com/view/hidimlearning/home">ICML HiLD</a>)</span>, 2024</span>
                 </p>
 
                 <p class="paper-info hidden-sm hidden-md hidden-lg">
                   <span class="paper-authors"><span class="underline">H. Shah</span>, A. Ilyas, A. Mądry</span><br/>
                   <span class="paper-venue-abbrv"><a target="_blank" href="https://icml.cc/Conferences/2024">ICML 2024</a></span><br>
+                  <span class="paper-venue-workshop"><span class="paper-venue-abbrv"><a target="_blank" href="https://sites.google.com/view/hidimlearning/home">+ ICML HiLD</a></span>, 2024</span>
                 </p>
 
                 <div class="paper-buttons">
@@ -213,10 +226,10 @@ TODO</pre>
 
                 <div id="bib6" style="display: none;">
                     <pre class="language-bib" class="paper-bib" data-lang>
-@inproceedings{shah2024decomposing,
+@article{shah2024decomposing,
   title={Decomposing and Editing Predictions by Modeling Model Computation},
-  author={Harshay Shah and Andrew Ilyas and Aleksander Madry},
-  booktitle={Arxiv preprint arXiv:2404.11534},
+  author={Shah, Harshay and Ilyas, Andrew and Madry, Aleksander},
+  journal={arXiv preprint arXiv:2404.11534},
   year={2024}
 }</pre>
                 </div>
