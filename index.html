@@ -534,13 +534,16 @@ TODO
 
   <script>
     function highlightDiv(id) {
-    const element = document.getElementById(id);
-    if (element) {
-      element.style.backgroundColor = 'rgb(252, 221, 221)';
-      setTimeout(() => {
-        fadeOutBackground(element, 1500);
-      }, 1000);
-    }
+      const element = document.getElementById(id);
+      if (element) {
+        element.style.backgroundColor = '';
+        setTimeout(() => {
+          element.style.backgroundColor = 'rgb(252, 221, 221)';
+          setTimeout(() => {
+            fadeOutBackground(element, 1500);
+          }, 1000);
+        }, 10);
+      }
     }
 
     function fadeOutBackground(element, duration) {
@@ -566,6 +569,20 @@ TODO
       requestAnimationFrame(animate);
     }
 
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function (e) {
+        const hash = this.getAttribute('href').substring(1);
+
+        const targetElement = document.getElementById(hash);
+        if (targetElement) {
+          setTimeout(() => {
+            highlightDiv(hash);
+          }, 0);
+        }
+      });
+    });
+
     window.addEventListener('hashchange', () => {
       const hash = window.location.hash.substring(1);
       highlightDiv(hash);
@@ -577,6 +594,7 @@ TODO
         highlightDiv(hash);
       }
     });
+
   </script>
 
   <script>
