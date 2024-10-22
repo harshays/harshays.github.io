@@ -14,8 +14,8 @@
 body {
   background-color: white;
   font-size: 120%;
-  font-family: 'Gentium Basic', 'Palatino', 'Garamond', 'Times';
-  padding-bottom: 50%;
+  font-family: "Gentium Basic", "Palatino", "Garamond", "Times";
+  /* padding-bottom: 50%; */
 }
 
 .inner-pre {
@@ -35,7 +35,9 @@ a {
   color: #8f0000;
 }
 
-a:hover, a:active, a:visited {
+a:hover,
+a:active,
+a:visited {
   color: #8f0000;
   text-decoration: underline;
 }
@@ -156,7 +158,7 @@ a:hover, a:active, a:visited {
 /* papers */
 .paper-div {
   font-size: 1.65em;
-  line-height: 1.35em;;
+  line-height: 1.35em;
   margin-bottom: 4%;
   scroll-margin-top: 1.1em;
 }
@@ -205,7 +207,9 @@ blockquote {
   color: #686868;
 }
 
-.paper-button, .paper-button:visited, .paper-button:active {
+.paper-button,
+.paper-button:visited,
+.paper-button:active {
   color: #8f0000 !important;
   text-decoration: none !important;
   border: 1px solid #8f0000;
@@ -221,33 +225,32 @@ blockquote {
 }
 
 .paper-bib {
-    background-color: #f9f9f9; /* Light grey background */
-    border: 1px solid #ddd; /* Light grey border */
-    border-radius: 5px; /* Rounded corners */
-    font-family: 'Courier New', monospace; /* Monospace font */
-    overflow: auto; /* Adds scroll bar if the content overflows */
-    white-space: nowrap; /* Preserves spaces and line breaks */
-  }
+  background-color: #f9f9f9; /* Light grey background */
+  border: 1px solid #ddd; /* Light grey border */
+  border-radius: 5px; /* Rounded corners */
+  font-family: "Courier New", monospace; /* Monospace font */
+  overflow: auto; /* Adds scroll bar if the content overflows */
+  white-space: nowrap; /* Preserves spaces and line breaks */
+}
 
-@media(hover:hover) {
+@media (hover: hover) {
   .paper-button:hover {
     color: #fffff8 !important;
     background-color: #8f0000 !important;
     text-decoration: none;
   }
-
 }
 
-@media(hover:none) {
-  .paper-button a, .paper-button a:hover {
+@media (hover: none) {
+  .paper-button a,
+  .paper-button a:hover {
     color: #fffff8 !important;
     background-color: #8f0000 !important;
     text-decoration: none !important;
   }
-
 }
 
-@media(max-width:767px) {
+@media (max-width: 767px) {
   .header-row {
     font-size: 0.85em;
   }
@@ -265,8 +268,7 @@ blockquote {
     margin: 0;
   }
 
-  @media(max-width:370px) {
-
+  @media (max-width: 370px) {
     .img-xs {
       display: none;
     }
@@ -278,12 +280,11 @@ blockquote {
 }
 
 .email {
-    font-size: 0.75em; /* Adjust this value as needed */
-    color: black;
-    text-decoration: none;
+  font-size: 0.75em; /* Adjust this value as needed */
+  color: black;
+  text-decoration: none;
 }
 
 html {
-    scroll-behavior: smooth;
-  }
-
+  scroll-behavior: smooth;
+}
