@@ -116,8 +116,8 @@
                   I have also spent two summers at <a href="https://machinelearning.apple.com/">Apple MLR</a> and <a href="https://akunacapital.com/">Akuna Capital</a>.
                 </p>
                 <p>
-                  I am broadly interested in understanding and steering large-scale machine learning models.
-                  Specifically, my recent work focuses on developing tools to analyze model behavior via targeted interventions to
+                  I am broadly interested in analyzing and steering large-scale machine learning models.
+                  Specifically, my recent work focuses on developing tools to probe model behavior via targeted interventions to
                   <a href="#moe">learning algorithms</a>,
                   <a href="#modeldiff">training data</a>,
                   <a href="#contextcite">in-context information</a>,
@@ -525,8 +525,6 @@ TODO
 }</pre>
                 </div>
               </div>
-
-
             </div>
           </div>
         </div>
@@ -534,6 +532,71 @@ TODO
         <div class="col-lg-2 col-md-1 hidden-sm hidden-xs"></div>
       </div>
   </body>
+
+  <script>
+    function highlightDiv(id) {
+      const element = document.getElementById(id);
+      if (element) {
+        element.style.backgroundColor = '';
+        setTimeout(() => {
+          element.style.backgroundColor = 'rgb(252, 221, 221)';
+          setTimeout(() => {
+            fadeOutBackground(element, 1500);
+          }, 1000);
+        }, 10);
+      }
+    }
+
+    function fadeOutBackground(element, duration) {
+      let startTime = null;
+      const initialColor = [252, 221, 221];
+      const finalColor = [255, 255, 255];
+
+      function animate(timestamp) {
+        if (!startTime) startTime = timestamp;
+        const progress = Math.min((timestamp - startTime) / duration, 1);
+
+        const r = Math.round(initialColor[0] + progress * (finalColor[0] - initialColor[0]));
+        const g = Math.round(initialColor[1] + progress * (finalColor[1] - initialColor[1]));
+        const b = Math.round(initialColor[2] + progress * (finalColor[2] - initialColor[2]));
+
+        element.style.backgroundColor = `rgb(${r},${g},${b})`;
+
+        if (progress < 1) {
+          requestAnimationFrame(animate);
+        }
+      }
+
+      requestAnimationFrame(animate);
+    }
+
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function (e) {
+        const hash = this.getAttribute('href').substring(1);
+
+        const targetElement = document.getElementById(hash);
+        if (targetElement) {
+          setTimeout(() => {
+            highlightDiv(hash);
+          }, 0);
+        }
+      });
+    });
+
+    window.addEventListener('hashchange', () => {
+      const hash = window.location.hash.substring(1);
+      highlightDiv(hash);
+    });
+
+    document.addEventListener('DOMContentLoaded', () => {
+      if (window.location.hash) {
+        const hash = window.location.hash.substring(1);
+        highlightDiv(hash);
+      }
+    });
+
+  </script>
 
   <script>
     (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
