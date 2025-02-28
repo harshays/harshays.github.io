@@ -231,6 +231,10 @@ a:visited {
     font-size: 0.94em;
 }
 
+.material-symbols-outlined {
+  font-size: 0.7em;
+}
+
 .blog-title,
 .blog-title:hover,
 .blog-title:active,
