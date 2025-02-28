@@ -163,6 +163,13 @@ a:visited {
 .blog-div {
     margin-bottom: 0.5% !important;
     padding: 0.45em !important;
+    cursor: pointer;  /* Add cursor pointer to indicate clickable */
+    transition: background-color 0.3s ease;
+    border-radius: 4px;
+}
+
+.blog-div:hover {
+    background-color: #ece1cb; /* Match paper-div hover color */
 }
 
 .paper-div {

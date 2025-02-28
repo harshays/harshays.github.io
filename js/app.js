@@ -9,6 +9,11 @@ $(document).ready(function () {
     $(abs).toggle();
   }
 
+  // Make blog-div clickable - open in new tab
+  $('.blog-div').click(function () {
+    window.open($(this).find('a.blog-title').attr('href'), '_blank');
+  });
+
   $('.abstract-button').click(function (e) {
     e.stopPropagation(); // Prevent event from bubbling to paper-div
     var id = $(this).attr('id');
