@@ -12,7 +12,7 @@
 }
 
 body {
-  background-color: #f5ece0;  /* Lighter sepia tone (was #f2e8d5) */
+  background-color: #f7f0e6;  /* Lighter sepia tone (was #f5ece0) */
   font-size: 120%;
   font-family: "Gentium Basic", "Palatino", "Garamond", "Times";
   /* padding-bottom: 50%; */
@@ -24,7 +24,7 @@ body {
 
 hr {
   margin: 0;
-  border-top: 4px double #c5b59c;  /* Lighter sepia tone (was #bba98d) */
+  border-top: 4px double #d1c4af;  /* Lighter sepia tone (was #c5b59c) */
 }
 
 .selected-button-span {
@@ -44,6 +44,10 @@ a:visited {
 
 .container {
   margin-top: 5%;
+  margin-bottom: 2%;
+}
+
+.blog-posts-container {
   margin-bottom: 2%;
 }
 
@@ -156,6 +160,11 @@ a:visited {
 }
 
 /* papers */
+.blog-div {
+    margin-bottom: 0.5% !important;
+    padding: 0.45em !important;
+}
+
 .paper-div {
   font-size: 1.65em;
   line-height: 1.35em;
@@ -169,8 +178,9 @@ a:visited {
   cursor: pointer;  /* Add cursor pointer to indicate clickable */
 }
 
+
 .paper-div:hover {
-  background-color: #eadfc8; /* Lighter sepia for hover (was #e4d5ba) */
+  background-color: #ece1cb; /* Darker sepia for hover (was #f0e8d8) */
 }
 
 .paper-info {
@@ -209,14 +219,34 @@ a:visited {
   font-size: 0.95em;
 }
 
+.blog-description {
+    padding-top: 0.3%;
+    padding-left: 1%;
+    color:#686868
+}
+
+.blog-date {
+    float: right;
+    color: #686868;
+    font-size: 0.94em;
+}
+
+.blog-title,
+.blog-title:hover,
+.blog-title:active,
+.blog-title:visited {
+    text-decoration: none;
+}
+
 blockquote {
   text-align: justify;
   font-size: 0.9em;
   line-height: 1.35em;
   padding: 0.5% 2% 0.5% 2%;
   color: #686868;
-  border-left: 5px solid #c5b59c;  /* Lighter sepia tone for the border (was #bba98d) */
+  border-left: 5px solid #d1c4af;  /* Lighter sepia tone (was #c5b59c) */
 }
+
 
 .paper-button,
 .paper-button:visited,
