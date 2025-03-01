@@ -577,7 +577,7 @@
       if (element) {
         element.style.backgroundColor = '';
         setTimeout(() => {
-          element.style.backgroundColor = 'rgb(252, 221, 221)';
+          element.style.backgroundColor = '#ece1cb';
           setTimeout(() => {
             fadeOutBackground(element, 1500);
           }, 1000);
@@ -587,8 +587,8 @@
 
     function fadeOutBackground(element, duration) {
       let startTime = null;
-      const initialColor = [252, 221, 221];
-      const finalColor = [255, 255, 255];
+      const initialColor = [236, 225, 203]; // #ece1cb in RGB
+      const finalColor = [247, 240, 230]; // #f7f0e6 in RGB (webpage background)
 
       function animate(timestamp) {
         if (!startTime) startTime = timestamp;

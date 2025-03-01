@@ -79,8 +79,8 @@ a:visited {
 
 .email {
   font-size: 0.75em;
-  background-color: white;
-  color: black;
+  background-color: #ece1cb; /* Match the hover color */
+  color: #8f0000; /* Match the link color */
 }
 
 /* name */
