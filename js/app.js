@@ -34,15 +34,4 @@ $(document).ready(function () {
     var bib = '#' + id.replace('b', 'bib');
     $(bib).toggle();
   });
-
-  //   $('#selected-button').click(function (e) {
-  //     if (onlySelected) {
-  //       e.target.innerText = 'Show selected';
-  //       onlySelected = false;
-  //     } else {
-  //       e.target.innerText = 'Show all';
-  //       onlySelected = true;
-  //     }
-  //     $('.paper-div-ns').toggle();
-  //   });
 });
