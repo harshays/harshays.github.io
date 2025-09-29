@@ -12,7 +12,7 @@
 }
 
 body {
-  background-color: #f7f0e6;  /* Lighter sepia tone (was #f5ece0) */
+  background-color: #ffffff;  /* White background */
   font-size: 120%;
   font-family: "Gentium Basic", "Palatino", "Garamond", "Times";
   /* padding-bottom: 50%; */
@@ -65,6 +65,29 @@ a:visited {
 .img-col {
   padding: 0 2em 0.5em 2em;
   margin-top: -0.5em;
+}
+
+/* Remove profile picture columns across breakpoints */
+.img-col,
+.img-xs {
+  display: none !important;
+}
+
+/* After removing the image column, make the content column span full 12 columns */
+@media (min-width: 768px) {
+  .content-inner-row .content-col {
+    width: 100% !important;
+    flex: 0 0 100% !important;
+    max-width: 100% !important;
+    padding-left: 0 !important;
+    margin-left: 0 !important;
+  }
+
+  /* Remove the row's negative margin that compensates for column padding */
+  .content-inner-row {
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+  }
 }
 
 .social-links {
@@ -180,7 +203,7 @@ a:visited {
 
 
 .paper-div:hover {
-  background-color: #ece1cb; /* Darker sepia for hover (was #f0e8d8) */
+  background-color: #e8e8e8; /* Light gray */
 }
 
 .paper-info {
