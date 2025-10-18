@@ -633,7 +633,7 @@ TODO
     function fadeOutBackground(element, duration) {
       let startTime = null;
       const initialColor = [236, 225, 203]; // #ece1cb in RGB
-      const finalColor = [247, 240, 230]; // #f7f0e6 in RGB (webpage background)
+      const finalColor = [255, 255, 255]; // #ffffff in RGB (white background)
 
       function animate(timestamp) {
         if (!startTime) startTime = timestamp;
@@ -647,6 +647,9 @@ TODO
 
         if (progress < 1) {
           requestAnimationFrame(animate);
+        } else {
+          // Clear the inline style so CSS hover effects work again
+          element.style.backgroundColor = '';
         }
       }
 
