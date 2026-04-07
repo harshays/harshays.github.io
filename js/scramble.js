@@ -30,13 +30,13 @@ function scrambledString(
 }
 
 function rescramble() {
-  for (i = 0; i < this.indices.length; i++) {
-    indexToMove = Math.floor(
+  for (let i = 0; i < this.indices.length; i++) {
+    const indexToMove = Math.floor(
       Math.random() * (this.indices.length - i)
     );
-    charIndexRemoved = this.indices.splice(indexToMove, 1);
+    const charIndexRemoved = this.indices.splice(indexToMove, 1);
     this.indices = this.indices.concat(charIndexRemoved);
-    scrambledStringTemp =
+    const scrambledStringTemp =
       this.string.substring(0, indexToMove) +
       this.string.substring(indexToMove + 1) +
       this.string.substring(indexToMove, indexToMove + 1);
@@ -46,13 +46,14 @@ function rescramble() {
 
 function initAnimatedBubbleSort() {
   this.tag.innerHTML = this.string;
-  this.interval = setInterval(this.objName + '.bubbleSortStep()', 12);
+  this.interval = setInterval(() => this.bubbleSortStep(), 12);
 }
 
 function bubbleSortStep() {
   if (this.bubbleSortBookmark >= this.indices.length - 1) {
     this.bubbleSortBookmark = 0;
   }
+  let i;
   for (
     i = this.bubbleSortBookmark;
     i < this.indices.length - 1;
@@ -63,16 +64,15 @@ function bubbleSortStep() {
     }
     if (this.indices[i] > this.indices[i + 1]) {
       this.changed = 1;
-      tempIndex = this.indices[i];
+      const tempIndex = this.indices[i];
       this.indices[i] = this.indices[i + 1];
       this.indices[i + 1] = tempIndex;
-      tempArrange =
+      const tempArrange =
         this.string.substring(0, i) +
         this.string.substring(i + 1, i + 2) +
         this.string.substring(i, i + 1) +
         this.string.substring(i + 2);
       this.string = tempArrange;
-      //   this.tag.innerHTML = this.string;
       this.tag.innerHTML =
         '<span class="email">' + this.string + '</span>';
       this.bubbleSortBookmark = i;

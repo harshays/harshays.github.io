@@ -1,93 +1,50 @@
-* {
-  /* border: 2px dotted black; */
-}
-
-.bold {
-  font-weight: 700;
+:root {
+  --bg-color: #ffffff;
+  --text-color: #000000;
+  --muted-text-color: #686868;
+  --link-color: #8f0000;
+  --divider-color: #d1c4af;
+  --card-hover-color: #e8e8e8;
+  --highlight-color: #ece1cb;
 }
 
 .underline {
-  /* text-decoration: underline; */
-  font-weight: bold;
+  text-decoration: underline dotted;
+  text-decoration-thickness: 2px;
+  text-underline-offset: 3px;
 }
 
 body {
-  background-color: #ffffff;  /* White background */
-  font-size: 120%;
-  font-family: "Gentium Basic", "Palatino", "Garamond", "Times";
-  /* padding-bottom: 50%; */
-}
-
-.inner-pre {
+  background-color: var(--bg-color);
+  color: var(--text-color);
   font-size: 125%;
+  font-family: "Gentium Basic", "Palatino", "Garamond", "Times";
+
 }
 
 hr {
   margin: 0;
-  border-top: 4px double #d1c4af;  /* Lighter sepia tone (was #c5b59c) */
-}
-
-.selected-button-span {
-  font-size: 60%;
+  border-top: 4px double var(--divider-color);
 }
 
 a {
-  color: #8f0000;
+  color: var(--link-color);
 }
 
 a:hover,
 a:active,
 a:visited {
-  color: #8f0000;
+  color: var(--link-color);
   text-decoration: underline;
 }
 
 .container {
-  margin-top: 5%;
+  margin-top: 10%;
   margin-bottom: 2%;
 }
 
 .blog-posts-container {
   margin-bottom: 2%;
-}
-
-.img-md {
-  max-height: 125px;
-  height: auto;
-  width: auto;
-}
-
-.img-xs {
-  max-width: 125px;
-  padding: 0em 0em 0em 3em;
-}
-
-.img-col {
-  padding: 0 2em 0.5em 2em;
-  margin-top: -0.5em;
-}
-
-/* Remove profile picture columns across breakpoints */
-.img-col,
-.img-xs {
-  display: none !important;
-}
-
-/* After removing the image column, make the content column span full 12 columns */
-@media (min-width: 768px) {
-  .content-inner-row .content-col {
-    width: 100% !important;
-    flex: 0 0 100% !important;
-    max-width: 100% !important;
-    padding-left: 0 !important;
-    margin-left: 0 !important;
-  }
-
-  /* Remove the row's negative margin that compensates for column padding */
-  .content-inner-row {
-    margin-left: 0 !important;
-    margin-right: 0 !important;
-  }
 }
 
 .social-links {
@@ -100,51 +57,48 @@ a:visited {
   padding: 0 0.05em 0 0 !important;
 }
 
-.email {
-  font-size: 0.75em;
-  background-color: #ece1cb; /* Match the hover color */
-  color: #8f0000; /* Match the link color */
-}
-
-/* name */
 .header {
-  font-size: 1.8em;
+  font-size: 1.6em;
   font-weight: 700;
   margin: 0;
 }
 
 .header-xs {
-  font-size: 3em;
+  font-size: 2.5em;
   font-weight: 700;
   margin: 0;
   margin-bottom: -1%;
 }
 
-/* work abbrv */
-.bio-subheader {
-  font-size: 1.1em;
-  margin-top: -0.25em;
-  margin-bottom: 0em;
+.research-details summary {
+  cursor: pointer;
+  list-style: none;
+  user-select: none;
 }
 
-.bio-subheader-xs {
-  font-size: 1.9em;
-  padding-bottom: 0;
-  margin-bottom: 0;
+.research-details summary::-webkit-details-marker {
+  display: none;
 }
 
-/* Section titles */
+.research-details .papers-content-row {
+  padding-left: 1.5em;
+}
+
+.research-arrow {
+  font-size: 0.7em;
+  vertical-align: middle;
+}
+
 .subheader-row {
-  margin-top: 3%;
+  margin-top: 0;
 }
 
 .subheader {
-  font-size: 2.25em;
+  font-size: 1.80em !important;
   font-weight: bold;
   padding-bottom: 0.25em;
 }
 
-/* social links base */
 .header-right {
   text-align: right;
   font-size: 2em;
@@ -153,25 +107,25 @@ a:visited {
 
 .content-row i {
   padding: 0.5%;
-  color: #8f0000;
+  color: var(--link-color);
 }
 
-/* for hr after header row */
-/* .content-row {
-  margin-top: 1.05em;
-} */
-
-/* name etc */
 .content-col {
   padding: 0;
   font-size: 1.5em;
 }
 
 .content-inner-row {
+  margin-left: 0;
+  margin-right: 0;
   margin-bottom: 1.75em;
 }
 
-/* bio */
+.header-column > .row {
+  margin-left: 0;
+  margin-right: 0;
+}
+
 .about-content-div {
   font-size: 1.67em;
   margin-bottom: 0em;
@@ -182,28 +136,51 @@ a:visited {
   margin-bottom: 1.01em;
 }
 
-/* papers */
+.about-content-div a {
+  text-decoration: underline dotted;
+  text-decoration-thickness: 2px;
+  text-underline-offset: 3px;
+  color: inherit;
+}
+
 .blog-div {
     margin-bottom: 0.5% !important;
-    padding: 0.45em !important;
 }
 
 .paper-div {
   font-size: 1.65em;
   line-height: 1.35em;
-  margin-bottom: 2%;
   scroll-margin-top: 1.1em;
   padding: 0.5em;
-  margin: -0.5em;
-  margin-bottom: 2%;
+  margin: -0.5em -0.5em 2%;
   border-radius: 4px;
   transition: background-color 0.3s ease;
-  cursor: pointer;  /* Add cursor pointer to indicate clickable */
+  cursor: pointer;
 }
 
 
 .paper-div:hover {
-  background-color: #e8e8e8; /* Light gray */
+  background-color: var(--card-hover-color);
+}
+
+.paper-div:focus-visible {
+  outline: 2px solid var(--link-color);
+  outline-offset: 2px;
+}
+
+.paper-div.is-highlighted {
+  animation: paper-highlight-fade 2.5s ease-out;
+}
+
+@keyframes paper-highlight-fade {
+  0%,
+  40% {
+    background-color: var(--highlight-color);
+  }
+
+  100% {
+    background-color: transparent;
+  }
 }
 
 .paper-info {
@@ -212,6 +189,10 @@ a:visited {
 
 .paper-authors {
   font-size: 0.96em;
+}
+
+.paper-authors sup {
+  font-size: 0.85em;
 }
 
 .paper-venue {
@@ -242,20 +223,9 @@ a:visited {
   font-size: 0.95em;
 }
 
-.blog-description {
-    padding-top: 0.3%;
-    padding-left: 1%;
-    color:#686868
-}
-
 .blog-date {
-    float: right;
     color: #686868;
-    font-size: 0.94em;
-}
-
-.material-symbols-outlined {
-  font-size: 0.7em;
+    font-size: 0.85em;
 }
 
 .blog-title,
@@ -270,21 +240,32 @@ blockquote {
   font-size: 0.9em;
   line-height: 1.35em;
   padding: 0.5% 2% 0.5% 2%;
-  color: #686868;
-  border-left: 5px solid #d1c4af;  /* Lighter sepia tone (was #c5b59c) */
+  color: var(--muted-text-color);
+  border-left: 5px solid var(--divider-color);
 }
 
 
 .paper-button,
 .paper-button:visited,
 .paper-button:active {
-  color: #8f0000 !important;
+  display: inline-block;
+  font-family: inherit;
+  line-height: 1.2;
+  vertical-align: middle;
+  color: var(--link-color) !important;
+  background-color: transparent;
   text-decoration: none !important;
-  border: 1px solid #8f0000;
+  border: 1px solid var(--link-color);
   border-radius: 5%;
   font-size: 0.75em;
   padding: 0.3% 0.7% 0.3% 0.7%;
   margin: 0 0.4% 0 0.1%;
+  cursor: pointer;
+}
+
+button.paper-button {
+  -webkit-appearance: none;
+  appearance: none;
 }
 
 .shields {
@@ -292,33 +273,25 @@ blockquote {
   filter: brightness(120%);
 }
 
-.paper-bib {
-  background-color: #f9f9f9; /* Light grey background */
-  border: 1px solid #ddd; /* Light grey border */
-  border-radius: 5px; /* Rounded corners */
-  font-family: "Courier New", monospace; /* Monospace font */
-  overflow: auto; /* Adds scroll bar if the content overflows */
-  white-space: nowrap; /* Preserves spaces and line breaks */
-}
-
 @media (hover: hover) {
   .paper-button:hover {
     color: #fffff8 !important;
-    background-color: #8f0000 !important;
+    background-color: var(--link-color) !important;
     text-decoration: none;
   }
 }
 
-@media (hover: none) {
-  .paper-button a,
-  .paper-button a:hover {
-    color: #fffff8 !important;
-    background-color: #8f0000 !important;
-    text-decoration: none !important;
-  }
+.paper-button:focus-visible {
+  outline: 2px solid var(--link-color);
+  outline-offset: 2px;
 }
 
 @media (max-width: 767px) {
+  .header-column .col-xs-12 {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
   .header-row {
     font-size: 0.85em;
   }
@@ -335,24 +308,35 @@ blockquote {
   .social-links {
     margin: 0;
   }
-
-  @media (max-width: 370px) {
-    .img-xs {
-      display: none;
-    }
-
-    .hidden-xxs {
-      display: none;
-    }
-  }
 }
 
 .email {
-  font-size: 0.75em; /* Adjust this value as needed */
-  color: black;
+  font-size: 0.75em;
+  color: var(--text-color);
   text-decoration: none;
+}
+
+@media (max-width: 370px) {
+  .hidden-xxs {
+    display: none;
+  }
 }
 
 html {
   scroll-behavior: smooth;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  .paper-div {
+    transition: none;
+  }
+
+  .paper-div.is-highlighted {
+    animation: none;
+    background-color: var(--highlight-color);
+  }
 }
