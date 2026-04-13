@@ -187,7 +187,6 @@ window.PUBLICATIONS = [
     links: [
       { label: "arxiv", href: "https://arxiv.org/abs/1712.10195" },
       { label: "code", href: "https://github.com/CrowdDynamicsLab/ARW" },
-      { label: "poster", href: "pdf/poster_www19_arw.pdf" },
       { label: "blog post", href: "https://crowddynamicslab.github.io/networks/2019/06/06/Growing-Attributed-Networks/" }
     ],
     abstractHtml: `
